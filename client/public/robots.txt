@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://spearhl.com/sitemap.xml
+
+# Priority pages for crawling
+Allow: /about
+Allow: /demo
+Allow: /contact
+
+# Block any potential sensitive areas
+Disallow: /api/
+Disallow: /_vite/
+Disallow: /node_modules/
