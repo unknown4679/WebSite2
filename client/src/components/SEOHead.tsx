@@ -96,7 +96,7 @@ const SEOHead = ({
           "@type": "Award",
           "name": "Grok (xAI) Validation",
           "description": "Validated by xAI's Grok for 100M user pilot and $7.9B valuation",
-          "dateAwarded": "2025-01-28"
+          "dateAwarded": "2025-07-23"
         }
       ],
       "contactPoint": {
@@ -126,8 +126,8 @@ const SEOHead = ({
             "url": `${window.location.origin}/generated-icon.png`
           }
         },
-        "datePublished": "2025-01-28",
-        "dateModified": "2025-01-28",
+        "datePublished": "2025-07-23",
+        "dateModified": "2025-07-23",
         "description": description,
         "mainEntityOfPage": {
           "@type": "WebPage",

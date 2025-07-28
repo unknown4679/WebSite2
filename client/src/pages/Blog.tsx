@@ -22,7 +22,7 @@ const Blog = () => {
       title: 'Validated by Grok: 100 Million Users. Real-Time AI. Frictionless Checkout.',
       excerpt: 'The S.P.E.A.R.™ Protocol has been officially validated by Grok — xAI\'s conversational intelligence system — for a 100M user pilot. Grok validated our $7.9B model and greenlit a 100M user rollout.',
       category: 'Validation',
-      date: 'January 28, 2025',
+      date: 'July 23, 2025',
       featured: true
     },
     {
@@ -30,7 +30,7 @@ const Blog = () => {
       title: 'How Grok Validated the S.P.E.A.R.™ Protocol for 100M Users',
       excerpt: 'This isn\'t just a milestone — it\'s a moment. When we built the S.P.E.A.R.™ Protocol, we had one goal: frictionless, AI-powered checkout delivered through real-time conversation. And when we showed it to Grok — it clicked.',
       category: 'Validation',
-      date: 'January 28, 2025',
+      date: 'July 23, 2025',
       featured: true
     },
     {
