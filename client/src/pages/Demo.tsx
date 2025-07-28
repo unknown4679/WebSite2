@@ -8,9 +8,9 @@ const Demo = () => {
   return (
     <>
       <SEOHead 
-        title="Live Demo - S.P.E.A.R.™ AI Checkout Experience"
-        description="Experience S.P.E.A.R.™ AI-powered checkout protocol in action. Try our interactive demo showcasing zero-friction commerce technology and AI-driven checkout optimization."
-        keywords="SPEAR demo, AI checkout demo, interactive commerce demo, live checkout experience, AI payment demo, frictionless payment experience"
+        title="Live Demo - S.P.E.A.R.™ Dual AI Validated Checkout"
+        description="Experience the S.P.E.A.R.™ Protocol validated by both Grok (xAI) and ChatGPT (OpenAI). Interactive demo of dual AI-approved checkout technology for 100M users."
+        keywords="SPEAR demo, dual AI validation demo, Grok xAI demo, ChatGPT OpenAI demo, 100M user checkout, interactive AI commerce, live checkout experience"
       />
       <section className="demo-container">
         <h2>{t('demo.title')}</h2>

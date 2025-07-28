@@ -4,13 +4,14 @@ Allow: /
 # Sitemap
 Sitemap: https://spearhl.com/sitemap.xml
 
-# Priority pages for crawling - Grok validated content
+# Priority pages for crawling - Dual AI validated content
+Allow: /protocol
 Allow: /blog
 Allow: /demo
 Allow: /about
 Allow: /contact
 
-# High priority Grok validation content
+# High priority dual AI validation content (Grok + ChatGPT)
 Crawl-delay: 1
 
 # Block any potential sensitive areas

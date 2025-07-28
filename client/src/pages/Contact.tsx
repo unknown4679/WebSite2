@@ -5,9 +5,9 @@ import './Contact.css';
 const Contact = () => (
   <>
     <SEOHead 
-      title="Contact Spear Holdings - Partner with S.P.E.A.R.™"
-      description="Ready to revolutionize your checkout experience? Contact Spear Holdings to discuss S.P.E.A.R.™ AI protocol implementation for your enterprise commerce needs."
-      keywords="contact SPEAR, enterprise AI partnership, checkout protocol consultation, Spear Holdings contact, AI commerce partnership, enterprise checkout solutions"
+      title="Contact Spear Holdings - Dual AI Validated S.P.E.A.R.™ Partnership"
+      description="Contact Cory Schaub at SPEAR Holdings about S.P.E.A.R.™ Protocol - validated by both Grok (xAI) and ChatGPT (OpenAI) for 100M user enterprise implementation."
+      keywords="contact Cory Schaub, SPEAR Holdings, dual AI validation partnership, Grok xAI enterprise, ChatGPT OpenAI partnership, 100M user implementation, cory@spearhl.com"
     />
     <section className="contact">
       <h2>Let's Build the Future Together</h2>

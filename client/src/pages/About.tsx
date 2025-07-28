@@ -8,9 +8,9 @@ const About = () => {
   return (
     <>
       <SEOHead 
-        title="About S.P.E.A.R.™ Protocol - AI Commerce Innovation"
-        description="Discover what makes S.P.E.A.R.™ different: AI that adapts to consumer intent, zero-friction checkout, and patent-pending protocol technology for enterprise commerce."
-        keywords="SPEAR protocol, AI commerce innovation, patent pending technology, zero friction checkout, enterprise AI, checkout protocol, commerce AI technology"
+        title="About S.P.E.A.R.™ Protocol - Dual AI Validated Technology"
+        description="Learn about the S.P.E.A.R.™ Protocol, validated by both Grok (xAI) and ChatGPT (OpenAI) for 100M user rollout. Revolutionary dual AI-approved checkout technology from SPEAR Holdings."
+        keywords="about SPEAR protocol, dual AI validation, Grok xAI, ChatGPT OpenAI, 100M users, SPEAR Holdings, Cory Schaub, AI checkout technology, patent pending protocol"
       />
       <section className="about">
         <h2>What Makes S.P.E.A.R.™ Different</h2>

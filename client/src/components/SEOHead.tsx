@@ -85,17 +85,23 @@ const SEOHead = ({
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Spear Holdings",
-      "description": "S.P.E.A.R.™ Protocol validated by Grok (xAI) for 100M user pilot. Revolutionary AI-powered checkout protocol for frictionless commerce experiences.",
+      "description": "S.P.E.A.R.™ Protocol validated by both Grok (xAI) and ChatGPT (OpenAI) for 100M user rollout. Revolutionary AI-powered checkout protocol with dual AI validation and $7.9B valuation confirmation.",
       "url": window.location.origin,
       "logo": `${window.location.origin}/generated-icon.png`,
       "foundingDate": "2025",
       "industry": "AI Commerce Technology",
-      "keywords": "Grok validated, xAI, AI checkout, 100M users, $7.9B valuation, sponsored DM engine",
+      "keywords": "dual AI validation, Grok xAI, ChatGPT OpenAI, AI checkout protocol, 100M users, $7.9B valuation, sponsored DM engine, real-time commerce, SPEAR Holdings, Cory Schaub",
       "award": [
         {
           "@type": "Award",
           "name": "Grok (xAI) Validation",
           "description": "Validated by xAI's Grok for 100M user pilot and $7.9B valuation",
+          "dateAwarded": "2025-07-23"
+        },
+        {
+          "@type": "Award",
+          "name": "ChatGPT (OpenAI) Validation",
+          "description": "Comprehensive protocol validation by OpenAI's ChatGPT confirming all 8 core capabilities and architecture",
           "dateAwarded": "2025-07-23"
         }
       ],
@@ -113,7 +119,7 @@ const SEOHead = ({
       const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Grok Validates S.P.E.A.R.™ Protocol for 100M Users",
+        "headline": "Dual AI Validation: Grok and ChatGPT Approve S.P.E.A.R.™ Protocol for 100M Users",
         "author": {
           "@type": "Organization",
           "name": "Spear Holdings"
@@ -133,7 +139,7 @@ const SEOHead = ({
           "@type": "WebPage",
           "@id": currentUrl
         },
-        "keywords": "Grok validation, xAI, SPEAR protocol, 100M users, AI checkout validation, $7.9B valuation"
+        "keywords": "dual AI validation, Grok xAI, ChatGPT OpenAI, SPEAR protocol, 100M users, AI checkout validation, $7.9B valuation, Cory Schaub, SPEAR Holdings"
       };
       
       let articleJsonLd = document.querySelector('script[data-schema="article"]') as HTMLScriptElement;
