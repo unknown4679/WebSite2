@@ -1,13 +1,20 @@
 import { useTranslation } from 'react-i18next';
+import './Demo.css';
 
-export default function Demo() {
+const Demo = () => {
   const { t } = useTranslation();
   
   return (
-    <section>
+    <section className="demo-container">
       <h2>{t('demo.title')}</h2>
       <p>{t('demo.subtitle')}</p>
-      {/* Your chatbot and product cards will go here */}
+      <div className="demo-box">
+        {/* Your chat UI will be embedded here */}
+        <p>[ Chatbot appears here in final version ]</p>
+      </div>
+      <button onClick={() => alert('Simulated Checkout Started!')}>Simulate Checkout</button>
     </section>
   );
-}
+};
+
+export default Demo;
