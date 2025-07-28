@@ -1,44 +1,34 @@
 .about {
-  text-align: center;
-  padding: 4rem 2rem;
   background: #000;
   color: #ff0033;
+  text-align: center;
+  padding: 4rem 2rem;
 }
 
 .about h2 {
-  font-size: 2rem;
-  text-shadow: 0 0 14px #ff0033;
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  text-shadow: 0 0 16px #ff0033;
 }
 
-.about .sub {
-  color: #ccc;
+.sub {
   font-size: 1.2rem;
+  color: #aaa;
   margin-bottom: 2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .about ul {
   list-style: none;
   padding: 0;
-  max-width: 500px;
-  margin: 2rem auto;
-  text-align: left;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto 2rem;
 }
 
 .about li {
-  color: #f0f0f0;
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem 0;
+  margin: 0.5rem 0;
 }
 
-.about .cta {
-  color: #ff0033;
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-top: 2rem;
+.cta {
+  font-size: 1.1rem;
   text-shadow: 0 0 10px #ff0033;
 }
