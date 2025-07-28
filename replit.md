@@ -16,6 +16,7 @@ Preferred communication style: Simple, everyday language.
 - Removed lengthy contact forms in favor of minimal, direct contact approach
 - Simplified Header component to basic navigation with "S.P.E.A.R.™ Protocol" branding
 - Simplified Footer to minimal copyright and contact info for "Spear Holdings"
+- Applied dark theme styling with cyan accents (#0ff) and dark background (#0a0a0a)
 - Updated messaging throughout to emphasize "protocol" and "zero friction" approach
 
 ## System Architecture
