@@ -19,6 +19,12 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://spearhl.com/blog</loc>
+    <lastmod>2025-01-28</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://spearhl.com/contact</loc>
     <lastmod>2025-01-28</lastmod>
     <priority>0.7</priority>

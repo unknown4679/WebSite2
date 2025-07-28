@@ -14,6 +14,7 @@ export default function Header() {
             <Link href="/">{t('nav.home')}</Link>
             <Link href="/demo">{t('nav.demo')}</Link>
             <Link href="/about">{t('nav.about')}</Link>
+            <Link href="/blog">Blog</Link>
             <Link href="/contact">{t('nav.contact')}</Link>
           </nav>
           <LanguageSwitcher />
