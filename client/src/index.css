@@ -25,12 +25,12 @@
   --radius: 0.5rem;
   
   /* Brand colors */
-  --brand-blue-500: hsl(221, 83%, 53%);
-  --brand-blue-600: hsl(224, 76%, 48%);
-  --brand-blue-700: hsl(226, 71%, 40%);
-  --brand-cyan-400: hsl(189, 94%, 43%);
-  --brand-cyan-500: hsl(188, 96%, 53%);
-  --brand-cyan-600: hsl(187, 85%, 53%);
+  --brand-red-400: hsl(348, 100%, 60%);
+  --brand-red-500: hsl(348, 100%, 50%);
+  --brand-red-600: hsl(348, 100%, 40%);
+  --brand-red-700: hsl(348, 100%, 30%);
+  --brand-accent: hsl(348, 100%, 50%);
+  --brand-accent-light: hsl(348, 100%, 60%);
 }
 
 .dark {
@@ -70,11 +70,11 @@
 
 @layer utilities {
   .brand-gradient {
-    background: linear-gradient(135deg, var(--brand-blue-500), var(--brand-cyan-500));
+    background: linear-gradient(135deg, var(--brand-red-500), var(--brand-red-400));
   }
   
   .brand-gradient-text {
-    background: linear-gradient(135deg, var(--brand-cyan-400), var(--brand-blue-400));
+    background: linear-gradient(135deg, var(--brand-red-400), var(--brand-red-500));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

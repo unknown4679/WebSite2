@@ -26,7 +26,7 @@ export default function LanguageSwitcher() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         style={{
-          backgroundColor: '#0ff',
+          backgroundColor: '#ff0033',
           color: '#000',
           padding: '0.5rem 1rem',
           border: 'none',
@@ -64,7 +64,7 @@ export default function LanguageSwitcher() {
                 width: '100%',
                 padding: '0.75rem 1rem',
                 backgroundColor: 'transparent',
-                color: i18n.language === language.code ? '#0ff' : '#f0f0f0',
+                color: i18n.language === language.code ? '#ff0033' : '#f0f0f0',
                 border: 'none',
                 cursor: 'pointer',
                 display: 'flex',
