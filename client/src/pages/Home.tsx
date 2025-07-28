@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <>
       <SEOHead 
-        title="Revolutionary AI-Powered Checkout Technology"
-        description="S.P.E.A.R.™ delivers zero-friction AI-powered checkout experiences for enterprise commerce. Transform your payment process with our revolutionary protocol."
-        keywords="AI checkout, frictionless commerce, payment protocol, SPEAR, checkout optimization, AI commerce, zero friction payment, enterprise checkout, revolutionary payment technology"
+        title="Grok Validated AI Checkout - 100M User Protocol"
+        description="Grok (xAI) validates S.P.E.A.R.™ for 100M users and $7.9B valuation. Revolutionary AI-powered checkout protocol delivering zero-friction commerce experiences."
+        keywords="Grok validated, xAI approved, 100M users, AI checkout, SPEAR protocol, $7.9B valuation, frictionless commerce, sponsored DM engine, real-time checkout"
       />
       <section className="hero">
         <h2>{t('home.title')}</h2>

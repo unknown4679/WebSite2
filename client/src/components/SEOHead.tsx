@@ -23,6 +23,9 @@ const SEOHead = ({
   const currentUrl = `${window.location.origin}${location}`;
   const canonicalUrl = canonical || currentUrl;
 
+  // Check if this is the blog page to add article schema
+  const isBlogPage = location.includes('/blog');
+
   useEffect(() => {
     // Update document title
     document.title = fullTitle;
@@ -77,14 +80,25 @@ const SEOHead = ({
     }
     canonical.href = canonicalUrl;
 
-    // Structured data for organization
+    // Enhanced structured data with Grok validation
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Spear Holdings",
-      "description": "Revolutionary AI-powered checkout protocol for frictionless commerce experiences",
+      "description": "S.P.E.A.R.™ Protocol validated by Grok (xAI) for 100M user pilot. Revolutionary AI-powered checkout protocol for frictionless commerce experiences.",
       "url": window.location.origin,
       "logo": `${window.location.origin}/generated-icon.png`,
+      "foundingDate": "2025",
+      "industry": "AI Commerce Technology",
+      "keywords": "Grok validated, xAI, AI checkout, 100M users, $7.9B valuation, sponsored DM engine",
+      "award": [
+        {
+          "@type": "Award",
+          "name": "Grok (xAI) Validation",
+          "description": "Validated by xAI's Grok for 100M user pilot and $7.9B valuation",
+          "dateAwarded": "2025-01-28"
+        }
+      ],
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+1-920-238-6591",
@@ -94,7 +108,45 @@ const SEOHead = ({
       "sameAs": []
     };
 
-    let jsonLd = document.querySelector('script[type="application/ld+json"]') as HTMLScriptElement;
+    // Add blog-specific article schema if on blog page
+    if (isBlogPage) {
+      const articleSchema = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Grok Validates S.P.E.A.R.™ Protocol for 100M Users",
+        "author": {
+          "@type": "Organization",
+          "name": "Spear Holdings"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Spear Holdings",
+          "logo": {
+            "@type": "ImageObject",
+            "url": `${window.location.origin}/generated-icon.png`
+          }
+        },
+        "datePublished": "2025-01-28",
+        "dateModified": "2025-01-28",
+        "description": description,
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": currentUrl
+        },
+        "keywords": "Grok validation, xAI, SPEAR protocol, 100M users, AI checkout validation, $7.9B valuation"
+      };
+      
+      let articleJsonLd = document.querySelector('script[data-schema="article"]') as HTMLScriptElement;
+      if (!articleJsonLd) {
+        articleJsonLd = document.createElement('script');
+        articleJsonLd.type = 'application/ld+json';
+        articleJsonLd.setAttribute('data-schema', 'article');
+        document.head.appendChild(articleJsonLd);
+      }
+      articleJsonLd.innerHTML = JSON.stringify(articleSchema);
+    }
+
+    let jsonLd = document.querySelector('script[type="application/ld+json"]:not([data-schema])') as HTMLScriptElement;
     if (!jsonLd) {
       jsonLd = document.createElement('script');
       jsonLd.type = 'application/ld+json';
