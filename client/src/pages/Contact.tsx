@@ -1,13 +1,13 @@
-import { useTranslation } from 'react-i18next';
+import React from 'react';
+import './Contact.css';
 
-export default function Contact() {
-  const { t } = useTranslation();
-  
-  return (
-    <section>
-      <h2>{t('contact.title')}</h2>
-      <p>{t('contact.email')}: cory@spearhl.com</p>
-      <p>{t('contact.phone')}: (920) 238-6591</p>
-    </section>
-  );
-}
+const Contact = () => (
+  <section className="contact">
+    <h2>Let's Build the Future Together</h2>
+    <p>Email: <a href="mailto:cory@spearhl.com">cory@spearhl.com</a></p>
+    <p>Phone: <a href="tel:9202386591">(920) 238-6591</a></p>
+    <p>Location: Fond du Lac, WI</p>
+  </section>
+);
+
+export default Contact;
