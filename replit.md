@@ -8,6 +8,14 @@ S.P.E.A.R.™ (Strategic Predictive Enterprise Analytics & Recommendations) is a
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes
+
+**July 28, 2025:**
+- Updated About page to focus on S.P.E.A.R.™ as a protocol rather than detailed company information
+- Simplified Contact page to show direct contact information (cory@spearhl.com, (920) 238-6591, Fond du Lac, WI)
+- Removed lengthy contact forms in favor of minimal, direct contact approach
+- Updated messaging to emphasize "protocol" and "zero friction" approach
+
 ## System Architecture
 
 ### Frontend Architecture
