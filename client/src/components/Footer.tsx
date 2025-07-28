@@ -6,7 +6,6 @@ export default function Footer() {
   return (
     <footer>
       <p>{t('footer.copyright')}</p>
-      <p>{t('footer.contactInfo')}</p>
     </footer>
   );
 }
