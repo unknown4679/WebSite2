@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "demo": "デモ",
+    "about": "概要",
+    "contact": "お問い合わせ"
+  },
+  "home": {
+    "title": "すべてを変えるプロトコル",
+    "subtitle": "AI駆動商取引の未来がここから始まります。",
+    "launchDemo": "デモを開始"
+  },
+  "about": {
+    "title": "製品以上のもの – プロトコル",
+    "description": "S.P.E.A.R.™はブランドとバイヤーの出会い方を変革します。1つのメッセージ、1回のクリック、摩擦ゼロ。"
+  },
+  "contact": {
+    "title": "一緒に未来を築きましょう",
+    "email": "メール",
+    "phone": "電話",
+    "location": "所在地"
+  },
+  "demo": {
+    "title": "S.P.E.A.R.™ライブデモ",
+    "subtitle": "4分以内で摩擦のないAI駆動チェックアウトを体験してください。",
+    "chatPlaceholder": "S.P.E.A.R.™に何でもお尋ねください...",
+    "demoProducts": "デモ製品",
+    "realTimeAnalytics": "リアルタイム分析",
+    "revenueToday": "本日の収益",
+    "activeUsers": "アクティブユーザー"
+  },
+  "footer": {
+    "copyright": "© 2025 Spear Holdings. 全権利留保。",
+    "contactInfo": "連絡先: cory@spearhl.com | (920) 238-6591"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

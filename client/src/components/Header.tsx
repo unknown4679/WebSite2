@@ -1,15 +1,24 @@
 import { Link } from "wouter";
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
+  const { t } = useTranslation();
+  
   return (
     <header>
-      <h1>S.P.E.A.R.™ Protocol</h1>
-      <nav>
-        <Link href="/">Home</Link>
-        <Link href="/demo">Demo</Link>
-        <Link href="/about">About</Link>
-        <Link href="/contact">Contact</Link>
-      </nav>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', maxWidth: '1200px', margin: '0 auto', padding: '0 1rem' }}>
+        <h1>S.P.E.A.R.™ Protocol</h1>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
+          <nav>
+            <Link href="/">{t('nav.home')}</Link>
+            <Link href="/demo">{t('nav.demo')}</Link>
+            <Link href="/about">{t('nav.about')}</Link>
+            <Link href="/contact">{t('nav.contact')}</Link>
+          </nav>
+          <LanguageSwitcher />
+        </div>
+      </div>
     </header>
   );
 }

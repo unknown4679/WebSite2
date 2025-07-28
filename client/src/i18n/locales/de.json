@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "demo": "Demo",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Das Protokoll, Das Alles Verändert",
+    "subtitle": "Die Zukunft des KI-gesteuerten Handels beginnt hier.",
+    "launchDemo": "Demo Starten"
+  },
+  "about": {
+    "title": "Mehr Als Ein Produkt – Ein Protokoll",
+    "description": "S.P.E.A.R.™ verwandelt, wie Marken auf Käufer treffen. Eine Nachricht, ein Klick, null Reibung."
+  },
+  "contact": {
+    "title": "Lasst Uns Die Zukunft Gemeinsam Bauen",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "location": "Standort"
+  },
+  "demo": {
+    "title": "Live S.P.E.A.R.™ Demo",
+    "subtitle": "Erleben Sie reibungslosen KI-gesteuerten Checkout in unter 4 Minuten.",
+    "chatPlaceholder": "Fragen Sie S.P.E.A.R.™ alles...",
+    "demoProducts": "Demo Produkte",
+    "realTimeAnalytics": "Echtzeit-Analysen",
+    "revenueToday": "Umsatz Heute",
+    "activeUsers": "Aktive Benutzer"
+  },
+  "footer": {
+    "copyright": "© 2025 Spear Holdings. Alle Rechte vorbehalten.",
+    "contactInfo": "Kontakt: cory@spearhl.com | (920) 238-6591"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

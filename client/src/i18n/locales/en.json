@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "Home",
+    "demo": "Demo",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "The Protocol That Changes Everything",
+    "subtitle": "The future of AI-driven commerce starts here.",
+    "launchDemo": "Launch Demo"
+  },
+  "about": {
+    "title": "More Than a Product – A Protocol",
+    "description": "S.P.E.A.R.™ transforms how brands meet buyers. One message, one click, zero friction."
+  },
+  "contact": {
+    "title": "Let's Build the Future Together",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location"
+  },
+  "demo": {
+    "title": "Live S.P.E.A.R.™ Demo",
+    "subtitle": "Experience frictionless AI-powered checkout in under 4 minutes.",
+    "chatPlaceholder": "Ask S.P.E.A.R.™ anything...",
+    "demoProducts": "Demo Products",
+    "realTimeAnalytics": "Real-time Analytics",
+    "revenueToday": "Revenue Today",
+    "activeUsers": "Active Users"
+  },
+  "footer": {
+    "copyright": "© 2025 Spear Holdings. All rights reserved.",
+    "contactInfo": "Contact: cory@spearhl.com | (920) 238-6591"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}
