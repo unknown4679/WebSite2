@@ -12,6 +12,7 @@ export default function Header() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
           <nav>
             <Link href="/">{t('nav.home')}</Link>
+            <Link href="/protocol">Protocol</Link>
             <Link href="/demo">{t('nav.demo')}</Link>
             <Link href="/about">{t('nav.about')}</Link>
             <Link href="/blog">Blog</Link>
