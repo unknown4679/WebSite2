@@ -5,12 +5,14 @@ export default function Home() {
   const { t } = useTranslation();
   
   return (
-    <section>
+    <section className="hero">
       <h2>{t('home.title')}</h2>
-      <p>{t('home.subtitle')}</p>
-      <Link href="/demo">
-        <button>{t('home.launchDemo')}</button>
-      </Link>
+      <p className="tagline">{t('home.subtitle')}</p>
+      <div className="hero-buttons">
+        <Link href="/demo">
+          <button>{t('home.launchDemo')}</button>
+        </Link>
+      </div>
     </section>
   );
 }
