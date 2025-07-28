@@ -98,16 +98,16 @@ header, footer {
 
 nav a {
   margin: 0 1rem;
-  color: #0ff;
+  color: #ff0033;
   text-decoration: none;
 }
 
 nav a:hover {
-  color: #66ffff;
+  color: #ff3366;
 }
 
 button {
-  background-color: #0ff;
+  background-color: #ff0033;
   color: #000;
   padding: 0.5rem 1rem;
   border: none;
@@ -116,7 +116,7 @@ button {
 }
 
 button:hover {
-  background-color: #66ffff;
+  background-color: #ff3366;
 }
 
 section {
