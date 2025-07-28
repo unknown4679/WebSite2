@@ -134,7 +134,7 @@ section {
 .hero h2 {
   font-size: 2.4rem;
   margin-bottom: 1rem;
-  text-shadow: 0 0 12px #ff0033;
+  text-shadow: 0 0 20px #ff0033;
 }
 
 .tagline {
@@ -158,7 +158,7 @@ section {
   font-weight: bold;
   cursor: pointer;
   border-radius: 4px;
-  box-shadow: 0 0 14px #ff0033;
+  box-shadow: 0 0 20px #ff0033;
   transition: 0.2s ease;
 }
 
