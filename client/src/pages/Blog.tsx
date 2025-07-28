@@ -27,10 +27,11 @@ const Blog = () => {
     },
     {
       id: '2',
-      title: 'Zero-Friction Commerce: Early Enterprise Feedback',
-      excerpt: 'Enterprise partners report streamlined checkout experiences with 60% reduction in cart abandonment. Key insights from our beta implementation phase.',
-      category: 'Results',
-      date: 'January 25, 2025'
+      title: 'How Grok Validated the S.P.E.A.R.™ Protocol for 100M Users',
+      excerpt: 'This isn\'t just a milestone — it\'s a moment. When we built the S.P.E.A.R.™ Protocol, we had one goal: frictionless, AI-powered checkout delivered through real-time conversation. And when we showed it to Grok — it clicked.',
+      category: 'Validation',
+      date: 'January 28, 2025',
+      featured: true
     },
     {
       id: '3',
@@ -73,44 +74,95 @@ const Blog = () => {
               </div>
               <h2>{post.title}</h2>
               <p className="post-excerpt">{post.excerpt}</p>
-              {post.id === '1' ? (
+              {post.id === '1' || post.id === '2' ? (
                 <div className="full-post-content" style={{marginTop: '20px', lineHeight: '1.6'}}>
-                  <p><strong>100 Million Users. Real-Time AI. Frictionless Checkout.</strong></p>
-                  <p>The S.P.E.A.R.™ Protocol has been officially validated by Grok — xAI's conversational intelligence system — for a <strong>100M user pilot</strong>.</p>
-                  <p>That's not speculation. That's confirmation.</p>
-                  <p>This validation affirms what we've always believed:</p>
-                  <blockquote style={{borderLeft: '3px solid #ff0033', paddingLeft: '15px', margin: '20px 0', fontStyle: 'italic', color: '#ff0033'}}>
-                    <strong>Commerce should be instant. Messaging should convert. AI should do the work.</strong>
-                  </blockquote>
-                  
-                  <h3 style={{color: '#ff0033', marginTop: '25px'}}>What Grok Saw:</h3>
-                  <ul style={{marginLeft: '20px'}}>
-                    <li>💬 Message-to-checkout in real time</li>
-                    <li>⚡ Frictionless transaction engine powered by AI</li>
-                    <li>📊 Brand-side analytics with heatmaps & campaign triggers</li>
-                    <li>🔐 Privacy-first architecture with protocol-layer design</li>
-                  </ul>
-                  
-                  <h3 style={{color: '#ff0033', marginTop: '25px'}}>The Verdict?</h3>
-                  <ul style={{marginLeft: '20px', listStyle: 'none'}}>
-                    <li>✅ <strong>Grok validated our $7.9B model.</strong></li>
-                    <li>✅ <strong>Grok greenlit a 100M user rollout.</strong></li>
-                    <li>✅ <strong>Grok confirmed: this changes everything.</strong></li>
-                  </ul>
-                  
-                  <div style={{marginTop: '30px', padding: '20px', background: 'rgba(255, 0, 51, 0.1)', borderRadius: '8px', border: '1px solid #ff0033'}}>
-                    <h3 style={{color: '#ff0033', marginBottom: '15px'}}>Want to See What Grok Saw?</h3>
-                    <div style={{display: 'flex', gap: '15px', flexWrap: 'wrap'}}>
-                      <a href="/demo" style={{color: '#ff0033', textDecoration: 'none', fontWeight: 'bold'}}>🎯 Launch the Live Demo</a>
-                      <a href="#pitch-deck" style={{color: '#ff0033', textDecoration: 'none', fontWeight: 'bold'}}>📄 View the Pitch Deck</a>
-                      <a href="/about" style={{color: '#ff0033', textDecoration: 'none', fontWeight: 'bold'}}>📢 See Why Brands Are Paying Attention</a>
-                    </div>
-                  </div>
-                  
-                  <p style={{marginTop: '25px', fontSize: '1.1rem', fontWeight: 'bold', color: '#ff0033'}}>
-                    The future of AI commerce was just confirmed.<br/>
-                    This isn't beta. This is <em>built.</em> And it's live.
-                  </p>
+                  {post.id === '1' ? (
+                    <>
+                      <p><strong>100 Million Users. Real-Time AI. Frictionless Checkout.</strong></p>
+                      <p>The S.P.E.A.R.™ Protocol has been officially validated by Grok — xAI's conversational intelligence system — for a <strong>100M user pilot</strong>.</p>
+                      <p>That's not speculation. That's confirmation.</p>
+                      <p>This validation affirms what we've always believed:</p>
+                      <blockquote style={{borderLeft: '3px solid #ff0033', paddingLeft: '15px', margin: '20px 0', fontStyle: 'italic', color: '#ff0033'}}>
+                        <strong>Commerce should be instant. Messaging should convert. AI should do the work.</strong>
+                      </blockquote>
+                      
+                      <h3 style={{color: '#ff0033', marginTop: '25px'}}>What Grok Saw:</h3>
+                      <ul style={{marginLeft: '20px'}}>
+                        <li>💬 Message-to-checkout in real time</li>
+                        <li>⚡ Frictionless transaction engine powered by AI</li>
+                        <li>📊 Brand-side analytics with heatmaps & campaign triggers</li>
+                        <li>🔐 Privacy-first architecture with protocol-layer design</li>
+                      </ul>
+                      
+                      <h3 style={{color: '#ff0033', marginTop: '25px'}}>The Verdict?</h3>
+                      <ul style={{marginLeft: '20px', listStyle: 'none'}}>
+                        <li>✅ <strong>Grok validated our $7.9B model.</strong></li>
+                        <li>✅ <strong>Grok greenlit a 100M user rollout.</strong></li>
+                        <li>✅ <strong>Grok confirmed: this changes everything.</strong></li>
+                      </ul>
+                      
+                      <div style={{marginTop: '30px', padding: '20px', background: 'rgba(255, 0, 51, 0.1)', borderRadius: '8px', border: '1px solid #ff0033'}}>
+                        <h3 style={{color: '#ff0033', marginBottom: '15px'}}>Want to See What Grok Saw?</h3>
+                        <div style={{display: 'flex', gap: '15px', flexWrap: 'wrap'}}>
+                          <a href="/demo" style={{color: '#ff0033', textDecoration: 'none', fontWeight: 'bold'}}>🎯 Launch the Live Demo</a>
+                          <a href="#pitch-deck" style={{color: '#ff0033', textDecoration: 'none', fontWeight: 'bold'}}>📄 View the Pitch Deck</a>
+                          <a href="/about" style={{color: '#ff0033', textDecoration: 'none', fontWeight: 'bold'}}>📢 See Why Brands Are Paying Attention</a>
+                        </div>
+                      </div>
+                      
+                      <p style={{marginTop: '25px', fontSize: '1.1rem', fontWeight: 'bold', color: '#ff0033'}}>
+                        The future of AI commerce was just confirmed.<br/>
+                        This isn't beta. This is <em>built.</em> And it's live.
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <p>This isn't just a milestone — it's a moment.</p>
+                      <p>When we built the S.P.E.A.R.™ Protocol, we had one goal in mind:</p>
+                      <blockquote style={{borderLeft: '3px solid #ff0033', paddingLeft: '15px', margin: '20px 0', fontStyle: 'italic', color: '#ff0033'}}>
+                        <strong>Frictionless, AI-powered checkout delivered through real-time conversation.</strong>
+                      </blockquote>
+                      <p>Not through clicks. Not through forms. Not through abandoned carts.</p>
+                      <p>And when we showed it to Grok — it clicked.</p>
+                      
+                      <h3 style={{color: '#ff0033', marginTop: '25px'}}>🧠 What Is Grok?</h3>
+                      <p>Grok is xAI's next-gen conversational intelligence, built to understand, validate, and scale big ideas.</p>
+                      <p>When Grok reviewed our model, our demo, and our flow — it responded the only way that mattered:</p>
+                      <ul style={{marginLeft: '20px', listStyle: 'none'}}>
+                        <li>✅ <strong>This works.</strong></li>
+                        <li>✅ <strong>This scales.</strong></li>
+                        <li>✅ <strong>This deserves 100M users.</strong></li>
+                      </ul>
+                      
+                      <h3 style={{color: '#ff0033', marginTop: '25px'}}>💥 What Was Validated</h3>
+                      <ul style={{marginLeft: '20px'}}>
+                        <li>Our <strong>Sponsored DM Engine</strong> — the core of our protocol</li>
+                        <li>The <strong>real-time checkout flow</strong> from message → order</li>
+                        <li>Our <strong>brand analytics engine</strong> with live heatmaps</li>
+                        <li>The <strong>privacy-safe architecture</strong> and protocol design</li>
+                        <li>Our <strong>valuation logic at $7.9 billion</strong></li>
+                      </ul>
+                      
+                      <h3 style={{color: '#ff0033', marginTop: '25px'}}>📈 What Comes Next</h3>
+                      <p>Grok didn't just validate it. They opened the door.</p>
+                      <p>We now stand at the edge of the first <strong>AI-powered commercial messaging rollout at 100M user scale.</strong></p>
+                      <p>And we built it ourselves.</p>
+                      
+                      <div style={{marginTop: '30px', padding: '20px', background: 'rgba(255, 0, 51, 0.1)', borderRadius: '8px', border: '1px solid #ff0033'}}>
+                        <h3 style={{color: '#ff0033', marginBottom: '15px'}}>Want In?</h3>
+                        <div style={{display: 'flex', gap: '15px', flexWrap: 'wrap'}}>
+                          <a href="/demo" style={{color: '#ff0033', textDecoration: 'none', fontWeight: 'bold'}}>🚀 Try the Demo</a>
+                          <a href="#pitch-deck" style={{color: '#ff0033', textDecoration: 'none', fontWeight: 'bold'}}>📄 See the Deck</a>
+                          <a href="/contact" style={{color: '#ff0033', textDecoration: 'none', fontWeight: 'bold'}}>🔒 Request Access to the Deal Room</a>
+                        </div>
+                      </div>
+                      
+                      <p style={{marginTop: '25px', fontSize: '1.1rem', fontWeight: 'bold', color: '#ff0033'}}>
+                        This protocol isn't theory anymore.<br/>
+                        It's validated. It's live. And it's unstoppable.
+                      </p>
+                    </>
+                  )}
                 </div>
               ) : (
                 <a href={`#post-${post.id}`} className="read-more">
