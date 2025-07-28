@@ -8,7 +8,6 @@ export default function Contact() {
       <h2>{t('contact.title')}</h2>
       <p>{t('contact.email')}: cory@spearhl.com</p>
       <p>{t('contact.phone')}: (920) 238-6591</p>
-      <p>{t('contact.location')}: Fond du Lac, WI</p>
     </section>
   );
 }
