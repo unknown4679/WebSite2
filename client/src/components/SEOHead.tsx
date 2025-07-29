@@ -149,7 +149,7 @@ const SEOHead = ({
         articleJsonLd.setAttribute('data-schema', 'article');
         document.head.appendChild(articleJsonLd);
       }
-      articleJsonLd.innerHTML = JSON.stringify(articleSchema);
+      articleJsonLd.textContent = JSON.stringify(articleSchema);
     }
 
     let jsonLd = document.querySelector('script[type="application/ld+json"]:not([data-schema])') as HTMLScriptElement;
@@ -158,7 +158,7 @@ const SEOHead = ({
       jsonLd.type = 'application/ld+json';
       document.head.appendChild(jsonLd);
     }
-    jsonLd.innerHTML = JSON.stringify(structuredData);
+    jsonLd.textContent = JSON.stringify(structuredData);
 
   }, [title, description, keywords, ogType, ogImage, canonical, location]);
 
