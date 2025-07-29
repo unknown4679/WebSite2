@@ -29,6 +29,10 @@
     "revenueToday": "Ingresos Hoy",
     "activeUsers": "Usuarios Activos"
   },
+  "heatmap": {
+    "title": "Mapa de Calor EE.UU. — DMs en Tiempo Real",
+    "dms": "DMs"
+  },
   "footer": {
     "copyright": "© 2025 Spear Holdings. Todos los derechos reservados."
   },

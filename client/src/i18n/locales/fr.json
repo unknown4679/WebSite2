@@ -29,6 +29,10 @@
     "revenueToday": "Revenus Aujourd'hui",
     "activeUsers": "Utilisateurs Actifs"
   },
+  "heatmap": {
+    "title": "Carte de Chaleur É.-U. — DMs en Temps Réel",
+    "dms": "DMs"
+  },
   "footer": {
     "copyright": "© 2025 Spear Holdings. Tous droits réservés."
   },
