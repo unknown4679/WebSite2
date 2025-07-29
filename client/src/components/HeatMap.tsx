@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import './heatmap.css';
 
 interface Region {
   name: string;
@@ -45,27 +46,19 @@ const HeatMap = () => {
 
   return (
     <div className="heatmap-container">
-      <h2 className="text-2xl font-bold mb-6 text-center bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">
+      <h2 style={{ textAlign: 'center', marginBottom: '1rem', fontSize: '1.5rem', fontWeight: 'bold' }}>
         🔥 {t('heatmap.title', 'U.S. Heatmap — Real-Time DMs')}
       </h2>
-      <div className="heatmap-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+      <div className="heatmap-grid">
         {data.map(region => (
           <div
             key={region.name}
-            className={`region-box p-4 rounded-lg border-2 transition-all duration-300 text-center ${
-              getHeatColor(region.dms) === 'hot' 
-                ? 'bg-red-600/20 border-red-500 shadow-lg shadow-red-500/25' 
-                : getHeatColor(region.dms) === 'heating-up'
-                ? 'bg-orange-500/20 border-orange-500 shadow-lg shadow-orange-500/25'
-                : getHeatColor(region.dms) === 'getting-cold'
-                ? 'bg-yellow-500/20 border-yellow-500 shadow-lg shadow-yellow-500/25'
-                : 'bg-blue-500/20 border-blue-500 shadow-lg shadow-blue-500/25'
-            }`}
+            className={`region-box ${getHeatColor(region.dms)}`}
           >
-            <strong className="block text-lg font-semibold text-white mb-2">
+            <strong>
               {region.name}
             </strong>
-            <p className="text-sm text-gray-300">
+            <p>
               {region.dms} {t('heatmap.dms', 'DMs')}
             </p>
           </div>
