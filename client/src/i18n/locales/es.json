@@ -33,6 +33,14 @@
     "title": "Mapa de Calor EE.UU. — DMs en Tiempo Real",
     "dms": "DMs"
   },
+  "brandDashboard": {
+    "title": "PANEL DE MARCAS",
+    "loading": "Cargando estadísticas en tiempo real...",
+    "roi": "ROI",
+    "conversions": "Conversiones",
+    "dmsReplied": "DMs Respondidos",
+    "trend": "Tendencia"
+  },
   "footer": {
     "copyright": "© 2025 Spear Holdings. Todos los derechos reservados."
   },

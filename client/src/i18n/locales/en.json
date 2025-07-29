@@ -33,6 +33,14 @@
     "title": "U.S. Heatmap — Real-Time DMs",
     "dms": "DMs"
   },
+  "brandDashboard": {
+    "title": "BRAND DASHBOARD",
+    "loading": "Loading real-time stats...",
+    "roi": "ROI",
+    "conversions": "Conversions",
+    "dmsReplied": "DMs Replied",
+    "trend": "Trend"
+  },
   "footer": {
     "copyright": "© 2025 Spear Holdings. All rights reserved."
   },

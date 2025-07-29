@@ -33,6 +33,14 @@
     "title": "Carte de Chaleur É.-U. — DMs en Temps Réel",
     "dms": "DMs"
   },
+  "brandDashboard": {
+    "title": "TABLEAU DE MARQUES",
+    "loading": "Chargement des statistiques en temps réel...",
+    "roi": "ROI",
+    "conversions": "Conversions",
+    "dmsReplied": "DMs Répondus",
+    "trend": "Tendance"
+  },
   "footer": {
     "copyright": "© 2025 Spear Holdings. Tous droits réservés."
   },
