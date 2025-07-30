@@ -21,17 +21,41 @@ const Demo = () => {
             textAlign: 'center',
             padding: '2rem'
           }}>
-            <h3 style={{color: '#ff0033', marginBottom: '1rem'}}>S.P.E.A.R.™ Demo</h3>
-            <p style={{color: '#ccc', marginBottom: '1.5rem'}}>Interactive demo coming soon</p>
+            <h3 style={{color: '#ff0033', marginBottom: '1rem', fontSize: '1.8rem'}}>S.P.E.A.R.™ Live Demo</h3>
+            <p style={{color: '#ccc', marginBottom: '2rem', fontSize: '1.1rem'}}>
+              Experience the full S.P.E.A.R.™ Protocol application
+            </p>
+            
+            <a 
+              href="https://demo.spearhl.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{
+                background: 'linear-gradient(135deg, #ff0033, #cc0029)',
+                color: 'white',
+                padding: '1.2rem 2.5rem',
+                fontSize: '1.2rem',
+                fontWeight: 'bold',
+                border: 'none',
+                borderRadius: '8px',
+                textDecoration: 'none',
+                display: 'inline-block',
+                boxShadow: '0 0 20px rgba(255, 0, 51, 0.5)',
+                transition: 'all 0.3s ease',
+                textTransform: 'uppercase',
+                letterSpacing: '1px'
+              }}
+            >
+              Launch Demo
+            </a>
             
             <div style={{
-              padding: '2rem',
-              background: '#000',
-              border: '1px solid #ff0033',
-              borderRadius: '8px',
-              color: '#ff0033'
+              marginTop: '1.5rem',
+              color: '#999',
+              fontSize: '0.9rem'
             }}>
-              Demo functionality under development
+              <p>Opens in new tab • Full application experience</p>
+              <p style={{color: '#ff0033', marginTop: '0.5rem'}}>demo.spearhl.com</p>
             </div>
           </div>
         </div>
