@@ -21,7 +21,6 @@ const Demo = () => {
           {/* Your chat UI will be embedded here */}
           <p>[ Chatbot appears here in final version ]</p>
         </div>
-        <button onClick={() => alert('Simulated Checkout Started!')}>Simulate Checkout</button>
       </section>
     </>
   );
