@@ -19,44 +19,19 @@ const Demo = () => {
         <div className="demo-box">
           <div style={{
             textAlign: 'center',
-            padding: '3rem 2rem'
+            padding: '2rem'
           }}>
-            <h3 style={{color: '#ff0033', marginBottom: '1.5rem', fontSize: '2rem'}}>S.P.E.A.R.™ Live Demo</h3>
-            <p style={{color: '#ccc', marginBottom: '3rem', fontSize: '1.1rem'}}>
-              Experience the full Node.js application with real-time features
-            </p>
-            
-            <a 
-              href="https://spear-demo.cory72.repl.co" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              style={{
-                background: 'linear-gradient(135deg, #ff0033, #cc0029)',
-                color: 'white',
-                padding: '1.5rem 3rem',
-                fontSize: '1.3rem',
-                fontWeight: 'bold',
-                border: 'none',
-                borderRadius: '8px',
-                textDecoration: 'none',
-                display: 'inline-block',
-                boxShadow: '0 0 25px rgba(255, 0, 51, 0.6)',
-                transition: 'all 0.3s ease',
-                textTransform: 'uppercase',
-                letterSpacing: '2px'
-              }}
-
-            >
-              Launch Demo
-            </a>
+            <h3 style={{color: '#ff0033', marginBottom: '1rem'}}>S.P.E.A.R.™ Demo</h3>
+            <p style={{color: '#ccc', marginBottom: '1.5rem'}}>Interactive demo coming soon</p>
             
             <div style={{
-              marginTop: '2rem',
-              color: '#999',
-              fontSize: '0.9rem'
+              padding: '2rem',
+              background: '#000',
+              border: '1px solid #ff0033',
+              borderRadius: '8px',
+              color: '#ff0033'
             }}>
-              <p>Opens in new tab • Full Node.js application</p>
-              <p style={{color: '#ff0033', marginTop: '0.5rem'}}>spear-demo.cory72.repl.co</p>
+              Demo functionality under development
             </div>
           </div>
         </div>
