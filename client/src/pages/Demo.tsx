@@ -1,7 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import SEOHead from '@/components/SEOHead';
-import HeatMap from '@/components/HeatMap';
-import BrandDashboard from '@/components/BrandDashboard';
 import './Demo.css';
 
 const Demo = () => {
@@ -18,15 +16,6 @@ const Demo = () => {
         <h2>{t('demo.title')}</h2>
         <p>{t('demo.subtitle')}</p>
         
-        {/* Real-time Heatmap */}
-        <div className="mb-8">
-          <HeatMap />
-        </div>
-        
-        {/* Brand Dashboard */}
-        <div className="mb-8">
-          <BrandDashboard />
-        </div>
         
         <div className="demo-box">
           {/* Your chat UI will be embedded here */}
