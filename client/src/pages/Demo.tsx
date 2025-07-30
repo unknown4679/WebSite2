@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { Link } from "wouter";
 import SEOHead from '@/components/SEOHead';
 import './Demo.css';
 
@@ -14,19 +13,6 @@ const Demo = () => {
         keywords="SPEAR demo, dual AI validation demo, Grok xAI demo, ChatGPT OpenAI demo, 100M user checkout, interactive AI commerce, live checkout experience"
       />
       <section className="demo-container">
-        <div style={{marginBottom: '2rem'}}>
-          <Link href="/" style={{
-            color: '#ff0033',
-            textDecoration: 'none',
-            fontSize: '0.9rem',
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '0.5rem'
-          }}>
-            ← Back to Website
-          </Link>
-        </div>
-        
         <h2>{t('demo.title') || 'Live S.P.E.A.R.™ Demo'}</h2>
         <p>{t('demo.subtitle') || 'Experience frictionless AI-powered checkout in under 4 minutes.'}</p>
         
@@ -82,42 +68,6 @@ const Demo = () => {
               </p>
             </div>
           </div>
-        </div>
-        
-        <div style={{
-          marginTop: '2rem',
-          textAlign: 'center'
-        }}>
-          <Link href="/" style={{
-            background: 'transparent',
-            color: '#ff0033',
-            padding: '0.75rem 1.5rem',
-            fontSize: '1rem',
-            fontWeight: 'bold',
-            border: '2px solid #ff0033',
-            borderRadius: '8px',
-            textDecoration: 'none',
-            display: 'inline-block',
-            transition: 'all 0.3s ease',
-            marginRight: '1rem'
-          }}>
-            🏠 Return to Home
-          </Link>
-          <Link href="/protocol" style={{
-            background: 'linear-gradient(135deg, #ff0033, #cc0029)',
-            color: 'white',
-            padding: '0.75rem 1.5rem',
-            fontSize: '1rem',
-            fontWeight: 'bold',
-            border: 'none',
-            borderRadius: '8px',
-            textDecoration: 'none',
-            display: 'inline-block',
-            boxShadow: '0 0 15px rgba(255, 0, 51, 0.3)',
-            transition: 'all 0.3s ease'
-          }}>
-            📋 View Protocol Details
-          </Link>
         </div>
       </section>
     </>
