@@ -13,7 +13,16 @@ export default function Header() {
           <nav>
             <Link href="/">{t('nav.home')}</Link>
             <Link href="/protocol">Protocol</Link>
-            <Link href="/demo">{t('nav.demo')}</Link>
+            <Link href="/demo" style={{
+              background: 'linear-gradient(135deg, #ff0033, #cc0029)',
+              color: 'white',
+              padding: '0.5rem 1rem',
+              borderRadius: '6px',
+              textDecoration: 'none',
+              fontWeight: 'bold',
+              boxShadow: '0 0 10px rgba(255, 0, 51, 0.3)',
+              transition: 'all 0.3s ease'
+            }}>🚀 {t('nav.demo')}</Link>
             <Link href="/about">{t('nav.about')}</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/contact">{t('nav.contact')}</Link>
