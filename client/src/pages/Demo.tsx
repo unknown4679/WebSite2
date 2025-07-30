@@ -1,14 +1,11 @@
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import SEOHead from '@/components/SEOHead';
 import HeatMap from '@/components/HeatMap';
 import BrandDashboard from '@/components/BrandDashboard';
-import ConfirmationModal from '@/components/ConfirmationModal';
 import './Demo.css';
 
 const Demo = () => {
   const { t } = useTranslation();
-  const [showConfirmation, setShowConfirmation] = useState(false);
   
   return (
     <>
@@ -35,20 +32,7 @@ const Demo = () => {
           {/* Your chat UI will be embedded here */}
           <p>[ Chatbot appears here in final version ]</p>
         </div>
-        <button 
-          onClick={() => setShowConfirmation(true)}
-          className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-red-500/25"
-        >
-          {t('demo.simulateCheckout', 'Simulate Checkout')}
-        </button>
-        
-        {showConfirmation && (
-          <ConfirmationModal 
-            onClose={() => setShowConfirmation(false)}
-            product="Cybertruck"
-            deliveryDate="Aug 2"
-          />
-        )}
+        <button onClick={() => alert('Simulated Checkout Started!')}>Simulate Checkout</button>
       </section>
     </>
   );
