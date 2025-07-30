@@ -27,7 +27,8 @@
     "demoProducts": "Demo Products",
     "realTimeAnalytics": "Real-time Analytics",
     "revenueToday": "Revenue Today",
-    "activeUsers": "Active Users"
+    "activeUsers": "Active Users",
+    "simulateCheckout": "Simulate Checkout"
   },
   "heatmap": {
     "title": "U.S. Heatmap — Real-Time DMs",
@@ -40,6 +41,11 @@
     "conversions": "Conversions",
     "dmsReplied": "DMs Replied",
     "trend": "Trend"
+  },
+  "confirmation": {
+    "orderConfirmed": "Order Confirmed!",
+    "deliveryMessage": "Your {{product}} will arrive by {{date}}.",
+    "poweredBy": "Powered by S.P.E.A.R.™"
   },
   "footer": {
     "copyright": "© 2025 Spear Holdings. All rights reserved."

@@ -41,6 +41,11 @@
     "dmsReplied": "DMs Répondus",
     "trend": "Tendance"
   },
+  "confirmation": {
+    "orderConfirmed": "Commande Confirmée !",
+    "deliveryMessage": "Votre {{product}} arrivera avant le {{date}}.",
+    "poweredBy": "Alimenté par S.P.E.A.R.™"
+  },
   "footer": {
     "copyright": "© 2025 Spear Holdings. Tous droits réservés."
   },
