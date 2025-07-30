@@ -17,7 +17,38 @@ export default function Home() {
         <p className="tagline">{t('home.subtitle')}</p>
         <div className="hero-buttons">
           <Link href="/demo">
-            <button>{t('home.launchDemo')}</button>
+            <button style={{
+              background: 'linear-gradient(135deg, #ff0033, #cc0029)',
+              color: 'white',
+              padding: '1rem 2rem',
+              fontSize: '1.2rem',
+              fontWeight: 'bold',
+              border: 'none',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              boxShadow: '0 0 20px #ff0033',
+              textTransform: 'uppercase',
+              letterSpacing: '1px',
+              transition: 'all 0.3s ease'
+            }}>
+              🚀 {t('home.launchDemo') || 'Launch Live Demo'}
+            </button>
+          </Link>
+          <Link href="/demo">
+            <button style={{
+              background: 'transparent',
+              color: '#ff0033',
+              padding: '1rem 2rem',
+              fontSize: '1rem',
+              fontWeight: 'bold',
+              border: '2px solid #ff0033',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              marginLeft: '1rem',
+              transition: 'all 0.3s ease'
+            }}>
+              🤖 Try Node.js Demo
+            </button>
           </Link>
         </div>
       </section>
