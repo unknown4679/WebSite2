@@ -9,6 +9,13 @@ import './Demo.css';
 const Demo = () => {
   const { t } = useTranslation();
   const [showConfirmation, setShowConfirmation] = useState(false);
+
+  const handleOrderNow = () => {
+    setShowConfirmation(true);
+    setTimeout(() => {
+      setShowConfirmation(false);
+    }, 3000); // Auto-close after 3 seconds
+  };
   
   return (
     <>
@@ -36,7 +43,7 @@ const Demo = () => {
           <p>[ Chatbot appears here in final version ]</p>
         </div>
         <button 
-          onClick={() => setShowConfirmation(true)}
+          onClick={handleOrderNow}
           className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-red-500/25"
         >
           {t('demo.simulateCheckout', 'Simulate Checkout')}
