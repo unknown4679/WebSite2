@@ -5,49 +5,114 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 10, 10, 0.85);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
-  align-items: center;
   justify-content: center;
-  z-index: 9999;
-  animation: fadeIn 0.4s ease-in;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
 }
 
 .confirmation-box {
-  background: #111;
-  border: 2px solid #00ff99;
-  padding: 40px;
-  border-radius: 12px;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  border: 2px solid #ff0033;
+  border-radius: 15px;
+  padding: 3rem 2rem;
   text-align: center;
-  color: #fff;
-  box-shadow: 0 0 20px #00ff99;
-  animation: popUp 0.3s ease-in-out;
+  color: white;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  animation: confirmationAppear 0.3s ease-out;
+  box-shadow: 
+    0 0 30px rgba(255, 0, 51, 0.3),
+    0 10px 50px rgba(0, 0, 0, 0.5);
+}
+
+.confirmation-box::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #ff0033, #ff6666, #ff0033);
+  border-radius: 15px;
+  z-index: -1;
+  animation: borderGlow 2s ease-in-out infinite alternate;
 }
 
 .confirmation-box h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #00ff88;
+  text-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+  animation: textGlow 2s ease-in-out infinite alternate;
 }
 
 .confirmation-box p {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+  line-height: 1.5;
 }
 
 .powered {
-  margin-top: 1rem;
-  font-size: 1rem;
-  opacity: 0.6;
-  font-style: italic;
+  color: #ff0033 !important;
+  font-weight: bold;
+  font-size: 0.9rem !important;
+  margin-top: 1.5rem !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(255, 0, 51, 0.5);
 }
 
-/* Animations */
-@keyframes popUp {
-  from { transform: scale(0.85); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+@keyframes confirmationAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+@keyframes borderGlow {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes textGlow {
+  from {
+    text-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+  }
+  to {
+    text-shadow: 0 0 25px rgba(0, 255, 136, 0.8);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .confirmation-box {
+    padding: 2rem 1.5rem;
+    max-width: 350px;
+  }
+  
+  .confirmation-box h1 {
+    font-size: 1.5rem;
+  }
+  
+  .confirmation-box p {
+    font-size: 1rem;
+  }
+  
+  .powered {
+    font-size: 0.8rem !important;
+  }
 }
