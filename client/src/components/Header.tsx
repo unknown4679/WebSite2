@@ -13,7 +13,7 @@ export default function Header() {
           <nav>
             <Link href="/">{t('nav.home')}</Link>
             <Link href="/protocol">Protocol</Link>
-            <Link href="/demo">{t('nav.demo')}</Link>
+            <a href="https://node-js-cory72.replit.app" target="_blank" rel="noopener noreferrer">{t('nav.demo')}</a>
             <Link href="/about">{t('nav.about')}</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/contact">{t('nav.contact')}</Link>
