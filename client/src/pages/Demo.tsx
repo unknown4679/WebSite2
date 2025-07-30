@@ -17,25 +17,65 @@ const Demo = () => {
         <p>{t('demo.subtitle')}</p>
         
         <div className="demo-box" style={{
-          padding: '0',
-          background: '#000',
+          padding: '2rem',
+          background: '#1a1a1a',
           border: '2px solid #ff0033',
           borderRadius: '12px',
-          overflow: 'hidden',
           height: '600px',
-          position: 'relative'
+          position: 'relative',
+          display: 'flex',
+          flexDirection: 'column'
         }}>
-          <iframe
-            src="https://spear-demo.cory72.repl.co"
-            title="S.P.E.A.R.™ Protocol Demo"
-            allow="clipboard-write; microphone; camera"
-            style={{
-              border: 'none',
-              width: '100%',
-              height: '100%',
-              borderRadius: '10px'
-            }}
-          />
+          <div style={{
+            textAlign: 'center',
+            marginBottom: '2rem'
+          }}>
+            <h3 style={{color: '#ff0033', marginBottom: '1rem'}}>S.P.E.A.R.™ Protocol Demo</h3>
+            <p style={{color: '#ccc', marginBottom: '1rem'}}>Live Node.js Application</p>
+          </div>
+          
+          <div style={{
+            flex: 1,
+            background: '#000',
+            border: '1px solid #333',
+            borderRadius: '8px',
+            position: 'relative',
+            overflow: 'hidden'
+          }}>
+            <iframe
+              src="https://spear-demo.cory72.repl.co"
+              title="S.P.E.A.R.™ Protocol Demo"
+              allow="clipboard-write; microphone; camera"
+              style={{
+                border: 'none',
+                width: '100%',
+                height: '100%'
+              }}
+              onError={() => console.log('Demo loading...')}
+            />
+            
+            <div style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              color: '#ff0033',
+              textAlign: 'center',
+              pointerEvents: 'none',
+              zIndex: 1
+            }}>
+              <div style={{
+                fontSize: '1.2rem',
+                marginBottom: '0.5rem'
+              }}>🚀</div>
+              <div>Demo Initializing...</div>
+              <div style={{
+                fontSize: '0.8rem',
+                color: '#999',
+                marginTop: '0.5rem'
+              }}>spear-demo.cory72.repl.co</div>
+            </div>
+          </div>
         </div>
         
         <div style={{
