@@ -16,65 +16,48 @@ const Demo = () => {
         <h2>{t('demo.title')}</h2>
         <p>{t('demo.subtitle')}</p>
         
-        <div className="demo-box" style={{
-          padding: '2rem',
-          background: '#1a1a1a',
-          border: '2px solid #ff0033',
-          borderRadius: '12px',
-          height: '600px',
-          position: 'relative',
-          display: 'flex',
-          flexDirection: 'column'
-        }}>
+        <div className="demo-box">
           <div style={{
             textAlign: 'center',
+            padding: '2rem',
+            background: '#1a1a1a',
+            border: '2px solid #ff0033',
+            borderRadius: '12px',
             marginBottom: '2rem'
           }}>
-            <h3 style={{color: '#ff0033', marginBottom: '1rem'}}>S.P.E.A.R.™ Protocol Demo</h3>
-            <p style={{color: '#ccc', marginBottom: '1rem'}}>Live Node.js Application</p>
+            <h3 style={{color: '#ff0033', marginBottom: '1rem'}}>Live Node.js Demo Available</h3>
+            <p style={{color: '#ccc', marginBottom: '2rem'}}>
+              Experience the full S.P.E.A.R.™ Protocol in action with our live Node.js application
+            </p>
+            <a 
+              href="https://node-js-cory72.replit.app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{
+                background: 'linear-gradient(135deg, #ff0033, #cc0029)',
+                color: 'white',
+                padding: '1rem 2rem',
+                fontSize: '1.1rem',
+                fontWeight: 'bold',
+                border: 'none',
+                borderRadius: '8px',
+                textDecoration: 'none',
+                display: 'inline-block',
+                boxShadow: '0 0 20px rgba(255, 0, 51, 0.3)',
+                transition: 'all 0.3s ease'
+              }}
+            >
+              🚀 Launch Live Demo
+            </a>
           </div>
           
           <div style={{
-            flex: 1,
-            background: '#000',
-            border: '1px solid #333',
-            borderRadius: '8px',
-            position: 'relative',
-            overflow: 'hidden'
+            textAlign: 'center',
+            padding: '1rem',
+            color: '#999',
+            fontSize: '0.9rem'
           }}>
-            <iframe
-              src="https://spear-demo.cory72.repl.co"
-              title="S.P.E.A.R.™ Protocol Demo"
-              allow="clipboard-write; microphone; camera"
-              style={{
-                border: 'none',
-                width: '100%',
-                height: '100%'
-              }}
-              onError={() => console.log('Demo loading...')}
-            />
-            
-            <div style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              color: '#ff0033',
-              textAlign: 'center',
-              pointerEvents: 'none',
-              zIndex: 1
-            }}>
-              <div style={{
-                fontSize: '1.2rem',
-                marginBottom: '0.5rem'
-              }}>🚀</div>
-              <div>Demo Initializing...</div>
-              <div style={{
-                fontSize: '0.8rem',
-                color: '#999',
-                marginTop: '0.5rem'
-              }}>spear-demo.cory72.repl.co</div>
-            </div>
+            <p>Demo opens in new tab • Full Node.js application • Real-time features</p>
           </div>
         </div>
         
