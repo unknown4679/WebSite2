@@ -26,7 +26,12 @@ const Demo = () => {
               Experience the full S.P.E.A.R.™ Protocol application
             </p>
             
-            <a href="/demo" className="launch-demo-btn">
+            <a 
+              href="https://node-js-cory72.replit.app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="launch-demo-btn"
+            >
               Launch Demo
             </a>
             
@@ -36,7 +41,7 @@ const Demo = () => {
               fontSize: '0.9rem'
             }}>
               <p>Opens in new tab • Full application experience</p>
-              <p style={{color: '#ff0033', marginTop: '0.5rem'}}>spearhl.com/demo</p>
+              <p style={{color: '#ff0033', marginTop: '0.5rem'}}>node-js-cory72.replit.app</p>
             </div>
           </div>
         </div>
