@@ -27,7 +27,7 @@ const Demo = () => {
             </p>
             
             <a 
-              href="https://demo.spearhl.com" 
+              href="https://spearhl.com/demo" 
               target="_blank" 
               rel="noopener noreferrer"
               style={{
@@ -55,7 +55,7 @@ const Demo = () => {
               fontSize: '0.9rem'
             }}>
               <p>Opens in new tab • Full application experience</p>
-              <p style={{color: '#ff0033', marginTop: '0.5rem'}}>demo.spearhl.com</p>
+              <p style={{color: '#ff0033', marginTop: '0.5rem'}}>spearhl.com/demo</p>
             </div>
           </div>
         </div>

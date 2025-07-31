@@ -16,7 +16,7 @@ export default function Home() {
         <h2>{t('home.title')}</h2>
         <p className="tagline">{t('home.subtitle')}</p>
         <div className="hero-buttons">
-          <a href="https://demo.spearhl.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://spearhl.com/demo" target="_blank" rel="noopener noreferrer">
             <button>{t('home.launchDemo')}</button>
           </a>
         </div>
