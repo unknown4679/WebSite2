@@ -21,9 +21,9 @@ const Demo = () => {
             textAlign: 'center',
             padding: '2rem'
           }}>
-            <h3 style={{color: '#ff0033', marginBottom: '1rem', fontSize: '1.8rem'}}>S.P.E.A.R.™ Live Demo</h3>
+            <h3 style={{color: '#ff0033', marginBottom: '1rem', fontSize: '1.8rem'}}>S.P.E.A.R.™ Protocol Demo</h3>
             <p style={{color: '#ccc', marginBottom: '2rem', fontSize: '1.1rem'}}>
-              Experience the full S.P.E.A.R.™ Protocol application
+              Launch the official S.P.E.A.R.™ Protocol demo at spear.com/demo
             </p>
             
             <a 
