@@ -17,7 +17,7 @@ export default function Home() {
         <p className="tagline">{t('home.subtitle')}</p>
         <div className="hero-buttons">
           <Link href="/demo">
-            <button className="launch-demo-btn">{t('home.launchDemo')}</button>
+            <button>{t('home.launchDemo')}</button>
           </Link>
         </div>
       </section>
