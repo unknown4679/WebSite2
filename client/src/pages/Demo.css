@@ -1,0 +1,51 @@
+.demo-container {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #000;
+  color: #ff0033;
+}
+
+.demo-container h2 {
+  font-size: 2rem;
+  text-shadow: 0 0 14px #ff0033;
+  margin-bottom: 1rem;
+}
+
+.demo-container p {
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.demo-box {
+  border: 2px solid #ff0033;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 10px;
+  background-color: #111;
+  box-shadow: 0 0 20px #ff0033;
+}
+
+.demo-box p {
+  color: #999;
+  font-style: italic;
+  margin: 0;
+}
+
+button {
+  background-color: #ff0033;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 12px #ff0033;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}

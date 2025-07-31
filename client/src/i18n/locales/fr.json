@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "demo": "Démo",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Le Protocole Qui Change Tout",
+    "subtitle": "L'avenir du commerce alimenté par l'IA commence ici.",
+    "launchDemo": "Lancer la Démo"
+  },
+  "about": {
+    "title": "Plus Qu'un Produit – Un Protocole",
+    "description": "S.P.E.A.R.™ transforme la façon dont les marques rencontrent les acheteurs. Un message, un clic, zéro friction."
+  },
+  "contact": {
+    "title": "Construisons l'Avenir Ensemble",
+    "email": "Email",
+    "phone": "Téléphone",
+    "location": "Localisation"
+  },
+  "demo": {
+    "title": "Démo S.P.E.A.R.™ en Direct",
+    "subtitle": "Découvrez le checkout alimenté par l'IA sans friction en moins de 4 minutes.",
+    "chatPlaceholder": "Demandez n'importe quoi à S.P.E.A.R.™...",
+    "demoProducts": "Produits Démo",
+    "realTimeAnalytics": "Analyses en Temps Réel",
+    "revenueToday": "Revenus Aujourd'hui",
+    "activeUsers": "Utilisateurs Actifs"
+  },
+  "heatmap": {
+    "title": "Carte de Chaleur É.-U. — DMs en Temps Réel",
+    "dms": "DMs"
+  },
+  "brandDashboard": {
+    "title": "TABLEAU DE MARQUES",
+    "loading": "Chargement des statistiques en temps réel...",
+    "roi": "ROI",
+    "conversions": "Conversions",
+    "dmsReplied": "DMs Répondus",
+    "trend": "Tendance"
+  },
+  "footer": {
+    "copyright": "© 2025 Spear Holdings. Tous droits réservés."
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

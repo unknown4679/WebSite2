@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "首页",
+    "demo": "演示",
+    "about": "关于",
+    "contact": "联系"
+  },
+  "home": {
+    "title": "改变一切的协议",
+    "subtitle": "AI驱动商务的未来从这里开始。",
+    "launchDemo": "启动演示"
+  },
+  "about": {
+    "title": "不仅是产品 - 更是协议",
+    "description": "S.P.E.A.R.™ 改变品牌与买家的连接方式。一条消息，一次点击，零摩擦。"
+  },
+  "contact": {
+    "title": "让我们一起构建未来",
+    "email": "邮箱",
+    "phone": "电话",
+    "location": "位置"
+  },
+  "demo": {
+    "title": "S.P.E.A.R.™ 实时演示",
+    "subtitle": "在4分钟内体验无摩擦的AI驱动结账。",
+    "chatPlaceholder": "向S.P.E.A.R.™询问任何问题...",
+    "demoProducts": "演示产品",
+    "realTimeAnalytics": "实时分析",
+    "revenueToday": "今日收入",
+    "activeUsers": "活跃用户"
+  },
+  "footer": {
+    "copyright": "© 2025 Spear Holdings. 保留所有权利。"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

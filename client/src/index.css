@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(222, 84%, 4.9%);
+  --muted: hsl(210, 40%, 98%);
+  --muted-foreground: hsl(215, 16%, 46.9%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222, 84%, 4.9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 84%, 4.9%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --primary: hsl(221, 83%, 53%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(222, 47%, 11%);
+  --accent: hsl(210, 40%, 96%);
+  --accent-foreground: hsl(222, 47%, 11%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(221, 83%, 53%);
+  --radius: 0.5rem;
+  
+  /* Brand colors */
+  --brand-red-400: hsl(348, 100%, 60%);
+  --brand-red-500: hsl(348, 100%, 50%);
+  --brand-red-600: hsl(348, 100%, 40%);
+  --brand-red-700: hsl(348, 100%, 30%);
+  --brand-accent: hsl(348, 100%, 50%);
+  --brand-accent-light: hsl(348, 100%, 60%);
+}
+
+.dark {
+  --background: hsl(222, 84%, 4.9%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --popover: hsl(222, 84%, 4.9%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 4.9%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32%, 17%);
+  --input: hsl(217, 32%, 17%);
+  --primary: hsl(221, 83%, 53%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(217, 32%, 17%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(217, 32%, 17%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 62%, 30%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(224, 76%, 48%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #f0f0f0;
+  }
+}
+
+@layer utilities {
+  .brand-gradient {
+    background: linear-gradient(135deg, var(--brand-red-500), var(--brand-red-400));
+  }
+  
+  .brand-gradient-text {
+    background: linear-gradient(135deg, var(--brand-red-400), var(--brand-red-500));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .page-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-sm border border-white/20;
+  }
+}
+
+/* Custom component styles */
+header, footer {
+  background-color: #000;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #ff0033;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ff3366;
+}
+
+button {
+  background-color: #ff0033;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff3366;
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: radial-gradient(ellipse at center, #0a0a0a 0%, #050505 100%);
+  color: #ff0033;
+}
+
+.hero h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 20px #ff0033;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.desc {
+  color: #999;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+.hero-buttons button {
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem;
+  border: none;
+  background-color: #ff0033;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 0 20px #ff0033;
+  transition: 0.2s ease;
+}
+
+.hero-buttons .secondary {
+  background-color: transparent;
+  border: 1px solid #ff0033;
+  color: #ff0033;
+}
+
+.hero-buttons button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff0033;
+}
+
+.launch-demo-btn {
+  background: linear-gradient(135deg, #ff0033, #cc0029);
+  color: white;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 20px rgba(255, 0, 51, 0.5);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.launch-demo-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 0, 51, 0.8);
+}
