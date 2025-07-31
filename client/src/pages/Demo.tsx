@@ -41,7 +41,7 @@ const Demo = () => {
               fontSize: '0.9rem'
             }}>
               <p>Opens in new tab • Full application experience</p>
-              <p style={{color: '#ff0033', marginTop: '0.5rem'}}>node-js-cory72.replit.app</p>
+              <p style={{color: '#ff0033', marginTop: '0.5rem'}}>spear.com/demo</p>
             </div>
           </div>
         </div>
