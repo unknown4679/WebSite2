@@ -19,45 +19,47 @@ const Demo = () => {
         <div className="demo-box">
           <div style={{
             textAlign: 'center',
-            padding: '2rem',
-            background: '#1a1a1a',
+            padding: '3rem 2rem',
+            background: '#0a0a0a',
             border: '2px solid #ff0033',
             borderRadius: '12px',
-            marginBottom: '2rem'
+            boxShadow: '0 0 30px rgba(255, 0, 51, 0.2)'
           }}>
-            <h3 style={{color: '#ff0033', marginBottom: '1rem'}}>Live Node.js Demo Available</h3>
-            <p style={{color: '#ccc', marginBottom: '2rem'}}>
-              Experience the full S.P.E.A.R.™ Protocol in action with our live Node.js application
+            <div style={{
+              fontSize: '4rem',
+              marginBottom: '1rem',
+              color: '#ff0033'
+            }}>⚡</div>
+            <h3 style={{
+              color: '#ff0033', 
+              marginBottom: '1rem',
+              fontSize: '1.5rem',
+              fontWeight: 'bold'
+            }}>S.P.E.A.R.™ Protocol Interface</h3>
+            <p style={{
+              color: '#ccc', 
+              marginBottom: '2rem',
+              lineHeight: '1.6',
+              maxWidth: '500px',
+              margin: '0 auto 2rem'
+            }}>
+              The S.P.E.A.R.™ Protocol represents the next generation of AI-powered commerce technology. 
+              This demonstration showcases the core capabilities of our dual AI-validated system.
             </p>
-            <a 
-              href="https://node-js-cory72.replit.app" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              style={{
-                background: 'linear-gradient(135deg, #ff0033, #cc0029)',
-                color: 'white',
-                padding: '1rem 2rem',
-                fontSize: '1.1rem',
-                fontWeight: 'bold',
-                border: 'none',
-                borderRadius: '8px',
-                textDecoration: 'none',
-                display: 'inline-block',
-                boxShadow: '0 0 20px rgba(255, 0, 51, 0.3)',
-                transition: 'all 0.3s ease'
-              }}
-            >
-              🚀 Launch Live Demo
-            </a>
-          </div>
-          
-          <div style={{
-            textAlign: 'center',
-            padding: '1rem',
-            color: '#999',
-            fontSize: '0.9rem'
-          }}>
-            <p>Demo opens in new tab • Full Node.js application • Real-time features</p>
+            <div style={{
+              background: 'linear-gradient(135deg, #ff0033, #cc0029)',
+              color: 'white',
+              padding: '1rem 2rem',
+              fontSize: '1rem',
+              fontWeight: 'bold',
+              border: 'none',
+              borderRadius: '8px',
+              display: 'inline-block',
+              boxShadow: '0 0 20px rgba(255, 0, 51, 0.3)',
+              cursor: 'default'
+            }}>
+              Demo Coming Soon
+            </div>
           </div>
         </div>
         

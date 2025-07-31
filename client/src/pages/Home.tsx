@@ -16,9 +16,9 @@ export default function Home() {
         <h2>{t('home.title')}</h2>
         <p className="tagline">{t('home.subtitle')}</p>
         <div className="hero-buttons">
-          <a href="https://node-js-cory72.replit.app" target="_blank" rel="noopener noreferrer">
+          <Link href="/demo">
             <button>{t('home.launchDemo')}</button>
-          </a>
+          </Link>
         </div>
       </section>
     </>
