@@ -26,26 +26,7 @@ const Demo = () => {
               Experience the full S.P.E.A.R.™ Protocol application
             </p>
             
-            <a 
-              href="https://spearhl.com/demo" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              style={{
-                background: 'linear-gradient(135deg, #ff0033, #cc0029)',
-                color: 'white',
-                padding: '1.2rem 2.5rem',
-                fontSize: '1.2rem',
-                fontWeight: 'bold',
-                border: 'none',
-                borderRadius: '8px',
-                textDecoration: 'none',
-                display: 'inline-block',
-                boxShadow: '0 0 20px rgba(255, 0, 51, 0.5)',
-                transition: 'all 0.3s ease',
-                textTransform: 'uppercase',
-                letterSpacing: '1px'
-              }}
-            >
+            <a href="/demo" className="launch-demo-btn">
               Launch Demo
             </a>
             
