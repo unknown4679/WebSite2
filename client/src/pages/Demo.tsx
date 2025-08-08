@@ -35,7 +35,7 @@ const Demo = () => {
               marginBottom: '1rem',
               fontSize: '1.5rem',
               fontWeight: 'bold'
-            }}>S.P.E.A.R.™ Protocol Interface</h3>
+            }}>S.P.E.A.R.™ Protocol Demo</h3>
             <p style={{
               color: '#ccc', 
               marginBottom: '2rem',
@@ -43,23 +43,29 @@ const Demo = () => {
               maxWidth: '500px',
               margin: '0 auto 2rem'
             }}>
-              The S.P.E.A.R.™ Protocol represents the next generation of AI-powered commerce technology. 
-              This demonstration showcases the core capabilities of our dual AI-validated system.
+              Experience the S.P.E.A.R.™ Protocol in action with our live Recipe Sage application. 
+              This demonstration showcases AI-powered functionality and real-time capabilities.
             </p>
-            <div style={{
-              background: 'linear-gradient(135deg, #ff0033, #cc0029)',
-              color: 'white',
-              padding: '1rem 2rem',
-              fontSize: '1rem',
-              fontWeight: 'bold',
-              border: 'none',
-              borderRadius: '8px',
-              display: 'inline-block',
-              boxShadow: '0 0 20px rgba(255, 0, 51, 0.3)',
-              cursor: 'default'
-            }}>
-              Demo Coming Soon
-            </div>
+            <a 
+              href="https://recipe-sage-cory72.replit.app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{
+                background: 'linear-gradient(135deg, #ff0033, #cc0029)',
+                color: 'white',
+                padding: '1rem 2rem',
+                fontSize: '1rem',
+                fontWeight: 'bold',
+                border: 'none',
+                borderRadius: '8px',
+                textDecoration: 'none',
+                display: 'inline-block',
+                boxShadow: '0 0 20px rgba(255, 0, 51, 0.3)',
+                transition: 'all 0.3s ease'
+              }}
+            >
+              Launch Live Demo
+            </a>
           </div>
         </div>
         

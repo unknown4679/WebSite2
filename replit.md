@@ -10,6 +10,14 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+**July 31, 2025:**
+- **RECIPE SAGE DEMO INTEGRATION**: Updated all demo links to point to Recipe Sage application
+- Home page Launch Demo button now links to https://recipe-sage-cory72.replit.app
+- Header Demo navigation opens Recipe Sage in new tab
+- Demo page displays professional launch interface for Recipe Sage application
+- All demo access points configured with proper external linking
+- **LIVE DEMO ACTIVE**: Recipe Sage application showcasing S.P.E.A.R.™ Protocol capabilities
+
 **July 30, 2025:**
 - **NODE.JS DEMO INTEGRATION COMPLETE**: Successfully integrated Node.js demo with website navigation
 - Fixed server port conflicts and ensured stable Express.js backend on port 5000
