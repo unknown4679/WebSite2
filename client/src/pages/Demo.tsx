@@ -16,57 +16,61 @@ const Demo = () => {
         <h2>{t('demo.title')}</h2>
         <p>{t('demo.subtitle')}</p>
         
-        <div className="demo-box">
+        <div className="demo-box" style={{
+          padding: '0',
+          background: '#000',
+          border: '2px solid #ff0033',
+          borderRadius: '12px',
+          overflow: 'hidden',
+          height: '700px',
+          position: 'relative',
+          boxShadow: '0 0 30px rgba(255, 0, 51, 0.3)'
+        }}>
           <div style={{
-            textAlign: 'center',
-            padding: '3rem 2rem',
             background: '#0a0a0a',
-            border: '2px solid #ff0033',
-            borderRadius: '12px',
-            boxShadow: '0 0 30px rgba(255, 0, 51, 0.2)'
+            padding: '1rem',
+            borderBottom: '1px solid #ff0033',
+            textAlign: 'center'
           }}>
-            <div style={{
-              fontSize: '4rem',
-              marginBottom: '1rem',
-              color: '#ff0033'
-            }}>⚡</div>
             <h3 style={{
-              color: '#ff0033', 
-              marginBottom: '1rem',
-              fontSize: '1.5rem',
+              color: '#ff0033',
+              margin: '0',
+              fontSize: '1.2rem',
               fontWeight: 'bold'
-            }}>S.P.E.A.R.™ Protocol Demo</h3>
-            <p style={{
-              color: '#ccc', 
-              marginBottom: '2rem',
-              lineHeight: '1.6',
-              maxWidth: '500px',
-              margin: '0 auto 2rem'
-            }}>
-              Experience the S.P.E.A.R.™ Protocol in action with our live Recipe Sage application. 
-              This demonstration showcases AI-powered functionality and real-time capabilities.
-            </p>
+            }}>S.P.E.A.R.™ Protocol Demo - Recipe Sage Application</h3>
+          </div>
+          
+          <iframe
+            src="https://recipe-sage-cory72.replit.app"
+            title="S.P.E.A.R.™ Protocol Demo - Recipe Sage"
+            allow="clipboard-write; microphone; camera"
+            style={{
+              border: 'none',
+              width: '100%',
+              height: 'calc(100% - 60px)',
+              display: 'block'
+            }}
+          />
+        </div>
+        
+        <div style={{
+          textAlign: 'center',
+          padding: '1rem',
+          color: '#999',
+          fontSize: '0.9rem',
+          marginTop: '1rem'
+        }}>
+          <p>Live embedded demo • Recipe Sage powered by S.P.E.A.R.™ Protocol • Real-time AI features</p>
+          <p style={{ fontSize: '0.8rem', marginTop: '0.5rem' }}>
             <a 
               href="https://recipe-sage-cory72.replit.app" 
               target="_blank" 
               rel="noopener noreferrer"
-              style={{
-                background: 'linear-gradient(135deg, #ff0033, #cc0029)',
-                color: 'white',
-                padding: '1rem 2rem',
-                fontSize: '1rem',
-                fontWeight: 'bold',
-                border: 'none',
-                borderRadius: '8px',
-                textDecoration: 'none',
-                display: 'inline-block',
-                boxShadow: '0 0 20px rgba(255, 0, 51, 0.3)',
-                transition: 'all 0.3s ease'
-              }}
+              style={{ color: '#ff0033', textDecoration: 'none' }}
             >
-              Launch Live Demo
+              Open in full window ↗
             </a>
-          </div>
+          </p>
         </div>
         
         <div style={{
