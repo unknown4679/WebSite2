@@ -42,7 +42,7 @@ export default function Home() {
         <p className="tagline">{t('home.subtitle')}</p>
         <div className="hero-buttons">
           <button onClick={handleDemoClick}>
-            {t('home.launchDemo')} {isAuthenticated && '🔓'}
+            {t('home.launchDemo')}
           </button>
         </div>
       </section>

@@ -48,10 +48,12 @@ export default function Header() {
                   color: 'inherit',
                   fontSize: 'inherit',
                   cursor: 'pointer',
-                  textDecoration: 'none'
+                  textDecoration: 'none',
+                  padding: 0,
+                  fontFamily: 'inherit'
                 }}
               >
-                {t('nav.demo')} {isAuthenticated && '🔓'}
+                {t('nav.demo')}
               </button>
               <Link href="/about">{t('nav.about')}</Link>
               <Link href="/blog">Blog</Link>
