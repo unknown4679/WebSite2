@@ -40,21 +40,7 @@ export default function Header() {
             <nav>
               <Link href="/">{t('nav.home')}</Link>
               <Link href="/protocol">Protocol</Link>
-              <button 
-                onClick={handleDemoClick}
-                style={{
-                  background: 'none',
-                  border: 'none',
-                  color: 'inherit',
-                  fontSize: 'inherit',
-                  cursor: 'pointer',
-                  textDecoration: 'none',
-                  padding: 0,
-                  fontFamily: 'inherit'
-                }}
-              >
-                {t('nav.demo')}
-              </button>
+              <a href="#" onClick={(e) => { e.preventDefault(); handleDemoClick(); }}>{t('nav.demo')}</a>
               <Link href="/about">{t('nav.about')}</Link>
               <Link href="/blog">Blog</Link>
               <Link href="/contact">{t('nav.contact')}</Link>
