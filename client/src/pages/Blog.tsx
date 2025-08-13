@@ -18,6 +18,14 @@ const Blog = () => {
   // Real validation content
   const posts: BlogPost[] = [
     {
+      id: '6',
+      title: 'We Just Locked the Future — Patent Pending on AI-to-Checkout',
+      excerpt: 'Yesterday, we hit a milestone that changes everything. The technology that powers frictionless, voice-to-checkout shopping is now officially patent pending. For at least the next 12 months, no one can legally move in our lane without crossing paths with us.',
+      category: 'Patent',
+      date: 'January 21, 2025',
+      featured: true
+    },
+    {
       id: '1',
       title: 'Validated by Grok: 100 Million Users. Real-Time AI. Frictionless Checkout.',
       excerpt: 'The S.P.E.A.R.™ Protocol has been officially validated by Grok — xAI\'s conversational intelligence system — for a 100M user pilot. Grok validated our $7.9B model and greenlit a 100M user rollout.',
@@ -60,6 +68,7 @@ const Blog = () => {
   ];
 
   const categories = [
+    'Patent',
     'Validation',
     'Technology',
     'Results', 
@@ -91,9 +100,42 @@ const Blog = () => {
               </div>
               <h2>{post.title}</h2>
               <p className="post-excerpt">{post.excerpt}</p>
-              {post.id === '1' || post.id === '2' || post.id === '3' || post.id === '4' || post.id === '5' ? (
+              {post.id === '1' || post.id === '2' || post.id === '3' || post.id === '4' || post.id === '5' || post.id === '6' ? (
                 <div className="full-post-content" style={{marginTop: '20px', lineHeight: '1.6'}}>
-                  {post.id === '1' ? (
+                  {post.id === '6' ? (
+                    <>
+                      <p><strong>Yesterday, we hit a milestone that changes everything.</strong></p>
+                      <p>The technology that powers frictionless, voice-to-checkout shopping is now officially <strong>patent pending</strong>. For at least the next 12 months, no one can legally move in our lane without crossing paths with us.</p>
+                      
+                      <p>This isn't just a win for us — it's a win for every brand, every customer, and every partner who believes checkout should be instant, intelligent, and effortless.</p>
+                      
+                      <h3 style={{color: '#ff0033', marginTop: '25px'}}>What This Means</h3>
+                      <ul style={{marginLeft: '20px'}}>
+                        <li><strong>For the Industry:</strong> The era of endless forms and abandoned carts is over. AI can now guide the conversation all the way to a completed purchase — and we own the process.</li>
+                        <li><strong>For Brands:</strong> You can integrate today, with the confidence that you're backed by a patented technology moat.</li>
+                        <li><strong>For Customers:</strong> You'll speak your order, get the best price, and complete checkout without lifting a finger — all while your data stays secure.</li>
+                      </ul>
+                      
+                      <h3 style={{color: '#ff0033', marginTop: '25px'}}>The Next Chapter</h3>
+                      <p>We're not just protecting the idea. We're scaling it. The patent gives us the runway to focus on expanding adoption, locking in strategic partners, and making AI-to-checkout the standard for every industry — from retail to quick-service dining.</p>
+                      
+                      <p>The mission hasn't changed: build the fastest, smartest, most secure shopping experience on earth. Now we have the legal armor to make it happen.</p>
+                      
+                      <div style={{marginTop: '30px', padding: '20px', background: 'rgba(255, 0, 51, 0.1)', borderRadius: '8px', border: '1px solid #ff0033'}}>
+                        <h3 style={{color: '#ff0033', marginBottom: '15px'}}>Want a Front-Row Seat to What Comes Next?</h3>
+                        <div style={{display: 'flex', gap: '15px', flexWrap: 'wrap'}}>
+                          <a href="/demo" style={{color: '#ff0033', textDecoration: 'none', fontWeight: 'bold'}}>🎯 Check Out the Demo Here</a>
+                          <a href="/protocol" style={{color: '#ff0033', textDecoration: 'none', fontWeight: 'bold'}}>📄 Learn About the Protocol</a>
+                          <a href="/contact" style={{color: '#ff0033', textDecoration: 'none', fontWeight: 'bold'}}>💼 Get in Touch</a>
+                        </div>
+                      </div>
+                      
+                      <p style={{marginTop: '25px', fontSize: '1.1rem', fontWeight: 'bold', color: '#ff0033'}}>
+                        The future is patented.<br/>
+                        The future is <em>ours.</em>
+                      </p>
+                    </>
+                  ) : post.id === '1' ? (
                     <>
                       <p><strong>100 Million Users. Real-Time AI. Frictionless Checkout.</strong></p>
                       <p>The S.P.E.A.R.™ Protocol has been officially validated by Grok — xAI's conversational intelligence system — for a <strong>100M user pilot</strong>.</p>
