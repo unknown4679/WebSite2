@@ -22,7 +22,7 @@ const Blog = () => {
       title: 'We Just Locked the Future — Patent Pending on AI-to-Checkout',
       excerpt: 'Yesterday, we hit a milestone that changes everything. The technology that powers frictionless, voice-to-checkout shopping is now officially patent pending. For at least the next 12 months, no one can legally move in our lane without crossing paths with us.',
       category: 'Patent',
-      date: 'January 21, 2025',
+      date: 'August 12, 2025',
       featured: true
     },
     {
