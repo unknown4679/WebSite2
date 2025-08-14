@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { useTranslation } from 'react-i18next';
 import SEOHead from '@/components/SEOHead';
 import { useState } from 'react';
+import { trackEvent } from '@/lib/analytics';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -11,8 +12,10 @@ export default function Home() {
 
   const handleDemoClick = () => {
     if (isAuthenticated) {
+      trackEvent('demo_access', 'engagement', 'home_launch_demo');
       window.open('https://recipe-sage-cory72.replit.app', '_blank');
     } else {
+      trackEvent('demo_auth_prompt', 'engagement', 'home_demo_request');
       setShowPasswordPrompt(true);
     }
   };
@@ -20,11 +23,13 @@ export default function Home() {
   const handlePasswordSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (password === 'Investor1!') {
+      trackEvent('demo_auth_success', 'engagement', 'home_investor_access');
       setIsAuthenticated(true);
       setShowPasswordPrompt(false);
       setPassword('');
       window.open('https://recipe-sage-cory72.replit.app', '_blank');
     } else {
+      trackEvent('demo_auth_failure', 'engagement', 'home_invalid_password');
       alert('Invalid password. Access denied.');
       setPassword('');
     }

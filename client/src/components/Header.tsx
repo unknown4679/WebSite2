@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useState } from 'react';
+import { trackEvent } from '@/lib/analytics';
 
 export default function Header() {
   const { t } = useTranslation();
@@ -12,8 +13,10 @@ export default function Header() {
 
   const handleDemoClick = () => {
     if (isAuthenticated) {
+      trackEvent('demo_access', 'engagement', 'header_demo_modal');
       setShowDemoModal(true);
     } else {
+      trackEvent('demo_auth_prompt', 'engagement', 'header_demo_request');
       setShowPasswordPrompt(true);
     }
   };
@@ -21,11 +24,13 @@ export default function Header() {
   const handlePasswordSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (password === 'Investor1!') {
+      trackEvent('demo_auth_success', 'engagement', 'header_investor_access');
       setIsAuthenticated(true);
       setShowPasswordPrompt(false);
       setShowDemoModal(true);
       setPassword('');
     } else {
+      trackEvent('demo_auth_failure', 'engagement', 'header_invalid_password');
       alert('Invalid password. Access denied.');
       setPassword('');
     }
