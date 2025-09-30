@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.P.E.A.R.™ Technology - AI-Powered Business Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'brand-blue': {
+                            500: '#2563eb',
+                            600: '#1d4ed8',
+                            700: '#1e40af'
+                        },
+                        'brand-cyan': {
+                            500: '#06b6d4',
+                            600: '#0891b2'
+                        }
+                    },
+                    backdropBlur: {
+                        xs: '2px'
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-inter bg-slate-50">
+    <!-- @COMPONENT: Header [navigation, responsive menu] -->
+    <header class="bg-white/95 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50 transition-all duration-300">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-brand-blue-500 to-brand-cyan-500 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-brain text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl font-bold text-slate-800">S.P.E.A.R.™</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-brand-blue-600 border-b-2 border-brand-blue-600" data-page="home">Home</a>
+                    <a href="#about" class="nav-link text-slate-600 hover:text-brand-blue-600" data-page="about">About</a>
+                    <a href="#demo" class="nav-link text-slate-600 hover:text-brand-blue-600" data-page="demo">Demo</a>
+                    <a href="#contact" class="nav-link text-slate-600 hover:text-brand-blue-600" data-page="contact">Contact</a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-4">
+                    <button class="px-4 py-2 text-slate-600 hover:text-brand-blue-600 transition-colors">Sign In</button>
+                    <button class="px-6 py-2 bg-brand-blue-600 text-white rounded-lg hover:bg-brand-blue-700 transition-all duration-200 shadow-md hover:shadow-lg">
+                        Get Started
+                    </button>
+                </div>
+                
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-slate-600"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 border-t border-slate-200">
+                    <a href="#home" class="mobile-nav-link block px-3 py-2 text-brand-blue-600" data-page="home">Home</a>
+                    <a href="#about" class="mobile-nav-link block px-3 py-2 text-slate-600" data-page="about">About</a>
+                    <a href="#demo" class="mobile-nav-link block px-3 py-2 text-slate-600" data-page="demo">Demo</a>
+                    <a href="#contact" class="mobile-nav-link block px-3 py-2 text-slate-600" data-page="contact">Contact</a>
+                    <div class="px-3 py-2 space-y-2">
+                        <button class="w-full px-4 py-2 text-slate-600 border border-slate-300 rounded-lg">Sign In</button>
+                        <button class="w-full px-4 py-2 bg-brand-blue-600 text-white rounded-lg">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- @END_COMPONENT: Header -->
+
+    <!-- @COMPONENT: PageContainer [handles page routing and transitions] -->
+    <main class="min-h-screen">
+        
+        <!-- @COMPONENT: HomePage [landing page with hero and features] -->
+        <div id="home-page" class="page-content">
+            <!-- Hero Section -->
+            <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-r from-brand-blue-600/20 to-brand-cyan-500/20"></div>
+                <!-- AI technology interface background -->
+                <div class="absolute inset-0 opacity-10">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080" alt="AI technology interface" class="w-full h-full object-cover" data-mock="true" />
+                </div>
+                
+                <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                                Revolutionize Your Business with 
+                                <span class="bg-gradient-to-r from-brand-cyan-400 to-brand-blue-400 bg-clip-text text-transparent">
+                                    S.P.E.A.R.™ AI
+                                </span>
+                            </h1>
+                            <p class="text-xl text-slate-300 mb-8 leading-relaxed">
+                                Strategic Predictive Enterprise Analytics & Recommendations. Transform your decision-making with cutting-edge artificial intelligence that adapts to your business needs.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <button class="px-8 py-4 bg-brand-blue-600 hover:bg-brand-blue-700 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                    Start Free Trial
+                                </button>
+                                <button class="px-8 py-4 border-2 border-white/30 hover:border-white/50 rounded-lg font-semibold transition-all duration-200 backdrop-blur-sm" data-event="click:openDemo">
+                                    View Demo
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="relative">
+                            <!-- AI technology interface showcase -->
+                            <div class="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
+                                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="AI technology dashboard interface" class="w-full h-64 object-cover rounded-xl" data-mock="true" />
+                                <div class="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-brand-cyan-500 to-brand-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                                    <i class="fas fa-chart-line text-white text-2xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="py-20 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
+                            Powerful AI-Driven Solutions
+                        </h2>
+                        <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+                            Our S.P.E.A.R.™ technology delivers actionable insights that drive real business results
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Feature Card 1 -->
+                        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-brand-blue-200 group">
+                            <div class="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-cyan-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-brain text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-800 mb-4">Predictive Analytics</h3>
+                            <p class="text-slate-600 leading-relaxed">
+                                Advanced machine learning algorithms analyze patterns to predict future trends and opportunities.
+                            </p>
+                        </div>
+                        
+                        <!-- Feature Card 2 -->
+                        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-brand-blue-200 group">
+                            <div class="w-16 h-16 bg-gradient-to-br from-brand-cyan-500 to-brand-blue-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-lightbulb text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-800 mb-4">Smart Recommendations</h3>
+                            <p class="text-slate-600 leading-relaxed">
+                                Get personalized recommendations based on your business data and industry best practices.
+                            </p>
+                        </div>
+                        
+                        <!-- Feature Card 3 -->
+                        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-brand-blue-200 group">
+                            <div class="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-cyan-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-shield-alt text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-800 mb-4">Enterprise Security</h3>
+                            <p class="text-slate-600 leading-relaxed">
+                                Bank-level encryption and security protocols ensure your data remains protected and private.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="py-20 bg-slate-800 text-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid md:grid-cols-3 gap-8 text-center">
+                        <div>
+                            <div class="text-4xl font-bold text-brand-cyan-400 mb-2" data-bind="stats.users">10,000+</div>
+                            <div class="text-slate-300">Active Users</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-brand-cyan-400 mb-2" data-bind="stats.accuracy">99.7%</div>
+                            <div class="text-slate-300">Prediction Accuracy</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-brand-cyan-400 mb-2" data-bind="stats.growth">250%</div>
+                            <div class="text-slate-300">Average ROI Increase</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- @END_COMPONENT: HomePage -->
+
+        <!-- @COMPONENT: AboutPage [company information and team] -->
+        <div id="about-page" class="page-content hidden">
+            <section class="py-20 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h1 class="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">About S.P.E.A.R.™</h1>
+                        <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+                            Leading the future of business intelligence through innovative AI technology
+                        </p>
+                    </div>
+                    
+                    <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+                        <div>
+                            <h2 class="text-3xl font-bold text-slate-800 mb-6">Our Mission</h2>
+                            <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                                At S.P.E.A.R.™, we believe that every business decision should be backed by intelligent data analysis. Our mission is to democratize advanced AI technology, making it accessible to businesses of all sizes.
+                            </p>
+                            <p class="text-lg text-slate-600 leading-relaxed">
+                                We're building the future where artificial intelligence seamlessly integrates with human expertise to drive unprecedented business growth and innovation.
+                            </p>
+                        </div>
+                        <div>
+                            <!-- Business professionals using technology -->
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Business professionals collaborating with technology" class="rounded-2xl shadow-lg" data-mock="true" />
+                        </div>
+                    </div>
+                    
+                    <!-- Team Section -->
+                    <div class="mb-20">
+                        <h2 class="text-3xl font-bold text-slate-800 text-center mb-12">Leadership Team</h2>
+                        <div class="grid md:grid-cols-3 gap-8">
+                            <!-- @MAP: teamMembers.map(member => ( -->
+                            <div class="text-center" data-mock="true">
+                                <!-- Professional headshot of tech executive -->
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300" alt="CEO headshot" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" data-mock="true" />
+                                <h3 class="text-xl font-semibold text-slate-800 mb-2" data-bind="member.name">John Anderson</h3>
+                                <p class="text-brand-blue-600 font-medium mb-2" data-bind="member.title">Chief Executive Officer</p>
+                                <p class="text-sm text-slate-600" data-bind="member.experience">15+ years in AI and enterprise software</p>
+                            </div>
+                            <!-- @END_MAP )) -->
+                        </div>
+                    </div>
+                    
+                    <!-- Values Section -->
+                    <div class="bg-slate-50 rounded-2xl p-12">
+                        <h2 class="text-3xl font-bold text-slate-800 text-center mb-12">Our Values</h2>
+                        <div class="grid md:grid-cols-3 gap-8">
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-brand-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-rocket text-white text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-slate-800 mb-3">Innovation</h3>
+                                <p class="text-slate-600">Pushing the boundaries of what's possible with AI technology</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-brand-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-users text-white text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-slate-800 mb-3">Collaboration</h3>
+                                <p class="text-slate-600">Working together to achieve extraordinary results</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-brand-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-star text-white text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-slate-800 mb-3">Excellence</h3>
+                                <p class="text-slate-600">Delivering superior quality in everything we do</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- @END_COMPONENT: AboutPage -->
+
+        <!-- @COMPONENT: DemoPage [interactive chatbot and product showcase] -->
+        <div id="demo-page" class="page-content hidden">
+            <section class="py-20 bg-slate-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h1 class="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">Experience S.P.E.A.R.™ AI</h1>
+                        <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+                            Try our interactive demo to see how S.P.E.A.R.™ can transform your business decisions
+                        </p>
+                    </div>
+                    
+                    <div class="grid lg:grid-cols-2 gap-12">
+                        <!-- Chatbot Interface -->
+                        <div class="bg-white rounded-2xl shadow-lg p-6">
+                            <div class="flex items-center mb-6 pb-4 border-b border-slate-200">
+                                <div class="w-10 h-10 bg-gradient-to-br from-brand-blue-500 to-brand-cyan-500 rounded-lg flex items-center justify-center mr-3">
+                                    <i class="fas fa-robot text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-slate-800">S.P.E.A.R.™ Assistant</h3>
+                                    <p class="text-sm text-slate-500">AI-powered business advisor</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Chat Messages -->
+                            <div class="space-y-4 mb-6 h-96 overflow-y-auto" id="chat-messages">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-8 h-8 bg-brand-blue-600 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-robot text-white text-sm"></i>
+                                    </div>
+                                    <div class="bg-slate-100 rounded-2xl px-4 py-3 max-w-xs">
+                                        <p class="text-sm text-slate-700">Hello! I'm your S.P.E.A.R.™ AI assistant. I can help you analyze business data, predict trends, and provide strategic recommendations. What would you like to explore today?</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Sample user message -->
+                                <div class="flex items-start space-x-3 justify-end" data-mock="true">
+                                    <div class="bg-brand-blue-600 rounded-2xl px-4 py-3 max-w-xs">
+                                        <p class="text-sm text-white">Can you analyze our e-commerce performance?</p>
+                                    </div>
+                                    <div class="w-8 h-8 bg-slate-400 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-user text-white text-sm"></i>
+                                    </div>
+                                </div>
+                                
+                                <!-- AI response with data -->
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-8 h-8 bg-brand-blue-600 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-robot text-white text-sm"></i>
+                                    </div>
+                                    <div class="bg-slate-100 rounded-2xl px-4 py-3 max-w-md">
+                                        <p class="text-sm text-slate-700 mb-3">I've analyzed your e-commerce data. Here are the key insights:</p>
+                                        <div class="bg-white rounded-lg p-3 text-xs space-y-2">
+                                            <div class="flex justify-between">
+                                                <span>Conversion Rate:</span>
+                                                <span class="text-green-600 font-semibold">↗ 3.2% (+0.8%)</span>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <span>Average Order Value:</span>
+                                                <span class="text-green-600 font-semibold">$127 (+15%)</span>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <span>Cart Abandonment:</span>
+                                                <span class="text-red-600 font-semibold">68% (-5%)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Chat Input -->
+                            <div class="flex items-center space-x-3">
+                                <input type="text" placeholder="Ask S.P.E.A.R.™ anything..." class="flex-1 px-4 py-3 border border-slate-300 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:border-transparent" id="chat-input" />
+                                <button class="px-6 py-3 bg-brand-blue-600 text-white rounded-full hover:bg-brand-blue-700 transition-colors" id="send-message">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Showcase -->
+                        <div class="space-y-6">
+                            <h3 class="text-2xl font-bold text-slate-800 mb-6">Demo Products</h3>
+                            
+                            <!-- @MAP: demoProducts.map(product => ( -->
+                            <!-- Product Card 1 -->
+                            <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300" data-mock="true">
+                                <div class="flex items-center space-x-4 mb-4">
+                                    <!-- E-commerce product image -->
+                                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="Premium wireless headphones" class="w-16 h-16 rounded-lg object-cover" data-mock="true" />
+                                    <div class="flex-1">
+                                        <h4 class="font-semibold text-slate-800" data-bind="product.name">Premium Wireless Headphones</h4>
+                                        <p class="text-slate-600 text-sm" data-bind="product.category">Electronics</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-lg font-bold text-slate-800" data-bind="product.price">$299</div>
+                                        <div class="text-sm text-green-600" data-bind="product.prediction">↗ 23% demand increase</div>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 gap-4 text-center text-sm">
+                                    <div>
+                                        <div class="font-semibold text-slate-800" data-bind="product.sales">1,247</div>
+                                        <div class="text-slate-500">Sales</div>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-slate-800" data-bind="product.rating">4.8</div>
+                                        <div class="text-slate-500">Rating</div>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-slate-800" data-bind="product.stock">847</div>
+                                        <div class="text-slate-500">Stock</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Product Card 2 -->
+                            <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300" data-mock="true">
+                                <div class="flex items-center space-x-4 mb-4">
+                                    <!-- E-commerce checkout process visualization -->
+                                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="Smart fitness tracker watch" class="w-16 h-16 rounded-lg object-cover" data-mock="true" />
+                                    <div class="flex-1">
+                                        <h4 class="font-semibold text-slate-800" data-bind="product.name">Smart Fitness Tracker</h4>
+                                        <p class="text-slate-600 text-sm" data-bind="product.category">Wearables</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-lg font-bold text-slate-800" data-bind="product.price">$199</div>
+                                        <div class="text-sm text-blue-600" data-bind="product.prediction">→ Stable demand</div>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 gap-4 text-center text-sm">
+                                    <div>
+                                        <div class="font-semibold text-slate-800" data-bind="product.sales">2,156</div>
+                                        <div class="text-slate-500">Sales</div>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-slate-800" data-bind="product.rating">4.6</div>
+                                        <div class="text-slate-500">Rating</div>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-slate-800" data-bind="product.stock">1,234</div>
+                                        <div class="text-slate-500">Stock</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- @END_MAP )) -->
+                            
+                            <!-- Demo Analytics Panel -->
+                            <div class="bg-gradient-to-br from-brand-blue-600 to-brand-cyan-600 rounded-2xl p-6 text-white">
+                                <h4 class="font-semibold mb-4">Real-time Analytics</h4>
+                                <!-- E-commerce checkout analytics visualization -->
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200" alt="E-commerce analytics dashboard showing checkout funnel" class="w-full h-32 rounded-lg object-cover mb-4 opacity-90" data-mock="true" />
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div>
+                                        <div class="font-semibold">Revenue Today</div>
+                                        <div class="text-2xl font-bold" data-bind="analytics.revenue">$47,230</div>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold">Active Users</div>
+                                        <div class="text-2xl font-bold" data-bind="analytics.users">1,847</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- @END_COMPONENT: DemoPage -->
+
+        <!-- @COMPONENT: ContactPage [contact form and information] -->
+        <div id="contact-page" class="page-content hidden">
+            <section class="py-20 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h1 class="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">Get in Touch</h1>
+                        <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+                            Ready to transform your business with S.P.E.A.R.™ AI? Let's discuss your needs.
+                        </p>
+                    </div>
+                    
+                    <div class="grid lg:grid-cols-2 gap-16">
+                        <!-- Contact Form -->
+                        <div class="bg-slate-50 rounded-2xl p-8">
+                            <h2 class="text-2xl font-bold text-slate-800 mb-6">Send us a message</h2>
+                            <form class="space-y-6" data-implementation="Should integrate with form validation and submission">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="block text-sm font-medium text-slate-700 mb-2">First Name</label>
+                                        <input type="text" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:border-transparent" placeholder="John" required />
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-slate-700 mb-2">Last Name</label>
+                                        <input type="text" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:border-transparent" placeholder="Doe" required />
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700 mb-2">Email Address</label>
+                                    <input type="email" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:border-transparent" placeholder="john@company.com" required />
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700 mb-2">Company</label>
+                                    <input type="text" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:border-transparent" placeholder="Your Company" />
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700 mb-2">Message</label>
+                                    <textarea rows="4" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:border-transparent" placeholder="Tell us about your project..." required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="w-full px-6 py-4 bg-brand-blue-600 text-white rounded-lg hover:bg-brand-blue-700 transition-all duration-200 font-semibold shadow-lg hover:shadow-xl">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <!-- Contact Information -->
+                        <div class="space-y-8">
+                            <div>
+                                <h2 class="text-2xl font-bold text-slate-800 mb-6">Contact Information</h2>
+                                <div class="space-y-6">
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-12 h-12 bg-brand-blue-600 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-map-marker-alt text-white"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-slate-800 mb-1">Address</h3>
+                                            <p class="text-slate-600">123 AI Technology Drive<br />San Francisco, CA 94105</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-12 h-12 bg-brand-cyan-600 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-phone text-white"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-slate-800 mb-1">Phone</h3>
+                                            <p class="text-slate-600">+1 (555) 123-SPEAR</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-12 h-12 bg-brand-blue-600 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-envelope text-white"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-slate-800 mb-1">Email</h3>
+                                            <p class="text-slate-600">hello@spear-ai.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Business professionals using technology -->
+                            <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-white">
+                                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" alt="Business professionals in a modern office using advanced technology" class="w-full h-48 rounded-xl object-cover mb-6" data-mock="true" />
+                                <h3 class="text-xl font-semibold mb-3">Ready to get started?</h3>
+                                <p class="text-slate-300 mb-4">Schedule a personalized demo and see how S.P.E.A.R.™ can transform your business.</p>
+                                <button class="px-6 py-3 bg-brand-cyan-600 hover:bg-brand-cyan-700 rounded-lg font-semibold transition-colors">
+                                    Schedule Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- @END_COMPONENT: ContactPage -->
+        
+    </main>
+    <!-- @END_COMPONENT: PageContainer -->
+
+    <!-- @COMPONENT: Footer [site links and company information] -->
+    <footer class="bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-br from-brand-blue-500 to-brand-cyan-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-brain text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold">S.P.E.A.R.™</span>
+                    </div>
+                    <p class="text-slate-300 mb-6 max-w-md">
+                        Strategic Predictive Enterprise Analytics & Recommendations. Transforming business decisions through advanced artificial intelligence.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-brand-blue-600 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-brand-blue-600 transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-brand-blue-600 transition-colors">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4">Product</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">API</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li><a href="#about" class="hover:text-white transition-colors" data-page="about">About</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors" data-page="contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 mt-12 pt-8 text-center text-slate-400">
+                <p>&copy; 2024 S.P.E.A.R.™ Technology. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement proper React Router integration, state management, and API calls
+        (function() {
+            // Page Navigation System
+            const pages = ['home', 'about', 'demo', 'contact'];
+            let currentPage = 'home';
+            
+            // Navigation event handlers
+            function initNavigation() {
+                // Desktop navigation
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const page = e.target.dataset.page;
+                        if (page) showPage(page);
+                    });
+                });
+                
+                // Mobile navigation
+                document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const page = e.target.dataset.page;
+                        if (page) {
+                            showPage(page);
+                            toggleMobileMenu();
+                        }
+                    });
+                });
+                
+                // Footer navigation
+                document.querySelectorAll('footer a[data-page]').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const page = e.target.dataset.page;
+                        if (page) showPage(page);
+                    });
+                });
+                
+                // Mobile menu toggle
+                document.getElementById('mobile-menu-btn').addEventListener('click', toggleMobileMenu);
+            }
+            
+            function showPage(page) {
+                // Hide all pages
+                pages.forEach(p => {
+                    const pageElement = document.getElementById(`${p}-page`);
+                    if (pageElement) {
+                        pageElement.classList.add('hidden');
+                    }
+                });
+                
+                // Show selected page
+                const targetPage = document.getElementById(`${page}-page`);
+                if (targetPage) {
+                    targetPage.classList.remove('hidden');
+                    currentPage = page;
+                    updateNavigation(page);
+                    window.scrollTo(0, 0);
+                }
+            }
+            
+            function updateNavigation(activePage) {
+                // Update desktop navigation
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    const page = link.dataset.page;
+                    if (page === activePage) {
+                        link.classList.add('text-brand-blue-600', 'border-b-2', 'border-brand-blue-600');
+                        link.classList.remove('text-slate-600');
+                    } else {
+                        link.classList.remove('text-brand-blue-600', 'border-b-2', 'border-brand-blue-600');
+                        link.classList.add('text-slate-600');
+                    }
+                });
+                
+                // Update mobile navigation
+                document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                    const page = link.dataset.page;
+                    if (page === activePage) {
+                        link.classList.add('text-brand-blue-600');
+                        link.classList.remove('text-slate-600');
+                    } else {
+                        link.classList.remove('text-brand-blue-600');
+                        link.classList.add('text-slate-600');
+                    }
+                });
+            }
+            
+            function toggleMobileMenu() {
+                const mobileMenu = document.getElementById('mobile-menu');
+                mobileMenu.classList.toggle('hidden');
+            }
+            
+            // Chat functionality for demo page
+            function initChat() {
+                const chatInput = document.getElementById('chat-input');
+                const sendButton = document.getElementById('send-message');
+                const chatMessages = document.getElementById('chat-messages');
+                
+                if (chatInput && sendButton) {
+                    sendButton.addEventListener('click', sendMessage);
+                    chatInput.addEventListener('keypress', (e) => {
+                        if (e.key === 'Enter') {
+                            sendMessage();
+                        }
+                    });
+                }
+                
+                function sendMessage() {
+                    const message = chatInput.value.trim();
+                    if (!message) return;
+                    
+                    // Add user message
+                    addMessage(message, 'user');
+                    chatInput.value = '';
+                    
+                    // Simulate AI response
+                    setTimeout(() => {
+                        const responses = [
+                            "I can help you analyze that data. Let me process the information...",
+                            "Based on the patterns I'm seeing, here are my recommendations:",
+                            "The predictive model suggests a 15% increase in this metric over the next quarter.",
+                            "I've identified some interesting trends in your data. Would you like me to dive deeper?"
+                        ];
+                        const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+                        addMessage(randomResponse, 'ai');
+                    }, 1000);
+                }
+                
+                function addMessage(text, sender) {
+                    const messageDiv = document.createElement('div');
+                    messageDiv.className = `flex items-start space-x-3 ${sender === 'user' ? 'justify-end' : ''}`;
+                    
+                    if (sender === 'user') {
+                        messageDiv.innerHTML = `
+                            <div class="bg-brand-blue-600 rounded-2xl px-4 py-3 max-w-xs">
+                                <p class="text-sm text-white">${text}</p>
+                            </div>
+                            <div class="w-8 h-8 bg-slate-400 rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-white text-sm"></i>
+                            </div>
+                        `;
+                    } else {
+                        messageDiv.innerHTML = `
+                            <div class="w-8 h-8 bg-brand-blue-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-robot text-white text-sm"></i>
+                            </div>
+                            <div class="bg-slate-100 rounded-2xl px-4 py-3 max-w-xs">
+                                <p class="text-sm text-slate-700">${text}</p>
+                            </div>
+                        `;
+                    }
+                    
+                    chatMessages.appendChild(messageDiv);
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }
+            }
+            
+            // Initialize all functionality
+            document.addEventListener('DOMContentLoaded', () => {
+                initNavigation();
+                initChat();
+            });
+            
+        })();
+    </script>
+</body>
+</html>
