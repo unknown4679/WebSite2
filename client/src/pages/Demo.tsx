@@ -144,7 +144,7 @@ const Demo = () => {
           </div>
           
           <iframe
-            src="https://recipe-sage-cory72.replit.app"
+            src="https://example.com/demo"
             title="S.P.E.A.R.™ Protocol Demo - Recipe Sage"
             allow="clipboard-write; microphone; camera"
             style={{
@@ -166,7 +166,7 @@ const Demo = () => {
           <p>Live embedded demo • Recipe Sage powered by S.P.E.A.R.™ Protocol • Real-time AI features</p>
           <p style={{ fontSize: '0.8rem', marginTop: '0.5rem' }}>
             <a 
-              href="https://recipe-sage-cory72.replit.app" 
+              href="https://example.com/demo" 
               target="_blank" 
               rel="noopener noreferrer"
               style={{ color: '#ff0033', textDecoration: 'none' }}

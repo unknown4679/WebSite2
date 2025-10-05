@@ -12,7 +12,7 @@ Preferred communication style: Simple, everyday language.
 
 **July 31, 2025:**
 - **RECIPE SAGE DEMO INTEGRATION**: Updated all demo links to point to Recipe Sage application
-- Home page Launch Demo button now links to https://recipe-sage-cory72.replit.app
+- Home page Launch Demo button now links to the externally hosted Recipe Sage demo
 - Header Demo navigation opens Recipe Sage in new tab
 - Demo page displays professional launch interface for Recipe Sage application
 - All demo access points configured with proper external linking
@@ -126,10 +126,8 @@ Preferred communication style: Simple, everyday language.
 - **Date Handling**: date-fns for date manipulation
 - **Utilities**: clsx and tailwind-merge for conditional styling
 
-### Replit Integration
-- **Development Banner**: Automatic Replit development environment banner
-- **Error Modal**: Runtime error overlay for development
-- **Cartographer**: Development-only code mapping tool
+### Platform-specific integrations removed
+This project previously included platform-specific development integrations (dev banner, runtime overlays, and tooling). These have been removed to make the repository platform-neutral. Use local dev tooling (Vite, ESBuild) and environment variables or a secret manager for secrets when deploying.
 
 ## Deployment Strategy
 
@@ -144,6 +142,19 @@ Preferred communication style: Simple, everyday language.
 - **Backend Build**: ESBuild bundles server code to `dist/index.js`
 - **Static Serving**: Express serves built frontend files in production
 - **Database Migration**: `npm run db:push` applies schema changes to PostgreSQL
+
+## CI / CD
+
+This repository includes a GitHub Actions workflow that builds the frontend (`client`) and deploys the generated static files to GitHub Pages on pushes to `main`.
+
+What to set up:
+- Ensure the `client` build command writes static files to a directory (this workflow looks for `dist/public` or `client/dist`).
+- If you want to deploy a dynamic backend, deploy it separately (Render, Heroku, Vercel) and set environment variables accordingly.
+
+To use the workflow:
+1. Push to `main` and GitHub Actions will run the build and publish the site to GitHub Pages.
+2. Make sure repository Pages is enabled in GitHub settings (the action publishes to `gh-pages` branch using the default token).
+
 
 ### Environment Configuration
 - **Database URL**: Required environment variable for PostgreSQL connection

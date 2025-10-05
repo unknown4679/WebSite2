@@ -11,9 +11,9 @@ export default function Home() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const handleDemoClick = () => {
-    if (isAuthenticated) {
+      if (isAuthenticated) {
       trackEvent('demo_access', 'engagement', 'home_launch_demo');
-      window.open('https://recipe-sage-cory72.replit.app', '_blank');
+      window.open('https://example.com/demo', '_blank');
     } else {
       trackEvent('demo_auth_prompt', 'engagement', 'home_demo_request');
       setShowPasswordPrompt(true);
@@ -24,10 +24,10 @@ export default function Home() {
     e.preventDefault();
     if (password === 'Investor1!') {
       trackEvent('demo_auth_success', 'engagement', 'home_investor_access');
-      setIsAuthenticated(true);
-      setShowPasswordPrompt(false);
-      setPassword('');
-      window.open('https://recipe-sage-cory72.replit.app', '_blank');
+  setIsAuthenticated(true);
+  setShowPasswordPrompt(false);
+  setPassword('');
+  window.open('https://example.com/demo', '_blank');
     } else {
       trackEvent('demo_auth_failure', 'engagement', 'home_invalid_password');
       alert('Invalid password. Access denied.');

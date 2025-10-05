@@ -111,7 +111,7 @@ export default function Header() {
             </div>
             
             <iframe
-              src="https://recipe-sage-cory72.replit.app"
+              src="https://example.com/demo"
               title="S.P.E.A.R.™ Protocol Demo - Recipe Sage"
               allow="clipboard-write; microphone; camera"
               style={{
